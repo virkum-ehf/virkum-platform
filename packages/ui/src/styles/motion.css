@@ -1,21 +1,28 @@
-/* Scroll reveals (see RevealObserver). Content is hidden only when scripts run (html.js),
-   and never for visitors who prefer reduced motion.
+/* Scroll reveals (see RevealObserver). Content is hidden only while the browser runs scripts
+   (`scripting: enabled`), so it stays visible without JavaScript, and never for visitors who prefer
+   reduced motion. Browsers without the `scripting` media feature (Safari before 17) show content
+   without the effect. No inline script or class on <html> is needed, so client-side navigation
+   (which re-renders <html>) cannot switch the effect off.
+
+   `:root` keeps these selectors exactly as specific as the former `.js` prefix.
 
    These rules sit in the `components` cascade layer, so a component's CSS Module (unlayered)
    always wins over them. A module must therefore not set `transition` on a .reveal, .cr or .cf
    element unless it keeps opacity and transform in the list; otherwise the element pops in
    instead of fading. */
 @layer components {
-  .js .reveal {
-    opacity: 0;
-    transform: translateY(14px);
-    transition:
-      opacity 0.8s var(--ease-brand),
-      transform 0.8s var(--ease-brand);
-  }
-  .js .reveal[data-in] {
-    opacity: 1;
-    transform: none;
+  @media (scripting: enabled) {
+    :root .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition:
+        opacity 0.8s var(--ease-brand),
+        transform 0.8s var(--ease-brand);
+    }
+    :root .reveal[data-in] {
+      opacity: 1;
+      transform: none;
+    }
   }
 
   /* Columns rise (guide p.21): each column grows from its base, left to right; the mint one
@@ -24,21 +31,23 @@
     transform-box: fill-box;
     transform-origin: 50% 100%;
   }
-  .js .rise .cr {
-    transform: scaleY(0.001);
-    transition: transform 0.95s var(--ease-brand);
-    transition-delay: calc(var(--i, 0) * var(--step, 45ms) + var(--d, 0ms));
-  }
-  .js .rise[data-in] .cr {
-    transform: none;
-  }
-  .js .rise .cf {
-    opacity: 0;
-    transition: opacity 0.6s ease;
-    transition-delay: var(--d, 0ms);
-  }
-  .js .rise[data-in] .cf {
-    opacity: 1;
+  @media (scripting: enabled) {
+    :root .rise .cr {
+      transform: scaleY(0.001);
+      transition: transform 0.95s var(--ease-brand);
+      transition-delay: calc(var(--i, 0) * var(--step, 45ms) + var(--d, 0ms));
+    }
+    :root .rise[data-in] .cr {
+      transform: none;
+    }
+    :root .rise .cf {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      transition-delay: var(--d, 0ms);
+    }
+    :root .rise[data-in] .cf {
+      opacity: 1;
+    }
   }
   .rise-now .cr {
     animation: cr-rise 0.9s var(--ease-brand) both;
@@ -46,9 +55,9 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .js .reveal,
-    .js .rise .cr,
-    .js .rise .cf {
+    :root .reveal,
+    :root .rise .cr,
+    :root .rise .cf {
       opacity: 1;
       transform: none;
       transition: none;

@@ -8,6 +8,16 @@ test.describe("header and language", () => {
     await expect(page).toHaveURL(/\/is\/daemi\/$/);
     await expect(page.locator("html")).toHaveAttribute("lang", "is");
     expect(await page.evaluate(() => localStorage.getItem("preferred-locale"))).toBe("is");
+
+    // Switching re-renders the root layout; reveals further down must still wait for the visitor.
+    const waitingReveals = await page.evaluate(
+      () =>
+        [...document.querySelectorAll(".reveal")].filter(
+          (element) =>
+            element.getBoundingClientRect().top > window.innerHeight * 1.2 && getComputedStyle(element).opacity === "0",
+        ).length,
+    );
+    expect(waitingReveals, "scroll reveals still active after switching language").toBeGreaterThan(0);
   });
 
   test("the logo and navigation links move between pages", async ({ page, isMobile }) => {

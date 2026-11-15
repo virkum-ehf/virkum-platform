@@ -5,7 +5,6 @@ import type { Metadata, Viewport } from "next";
 import en from "@/content/messages/en.json";
 import is from "@/content/messages/is.json";
 import { GlobalNotFound, type NotFoundMessages } from "@/features/not-found/GlobalNotFound";
-import { MARK_SCRIPTED } from "@/lib/documentScripts";
 
 import { fontVariables } from "./fonts";
 
@@ -36,9 +35,6 @@ const pick = (messages: typeof is): NotFoundMessages => ({
 export default function GlobalNotFoundPage() {
   return (
     <html lang="is" className={fontVariables} suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: MARK_SCRIPTED }} />
-      </head>
       <body className="antialiased" suppressHydrationWarning>
         <GlobalNotFound messages={{ is: pick(is), en: pick(en) }} />
       </body>

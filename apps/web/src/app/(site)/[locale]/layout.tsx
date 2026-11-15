@@ -14,7 +14,6 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { env } from "@/config/env";
 import { SITE_URL } from "@/config/site";
 import { resolveLocale } from "@/i18n/server";
-import { MARK_SCRIPTED } from "@/lib/documentScripts";
 import { organizationJsonLd } from "@/lib/seo/json-ld";
 
 import { fontVariables } from "../../fonts";
@@ -92,9 +91,6 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={fontVariables} data-scroll-behavior="smooth" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: MARK_SCRIPTED }} />
-      </head>
       <body className="antialiased" suppressHydrationWarning>
         <NextIntlClientProvider
           locale={locale}
