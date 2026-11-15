@@ -1,12 +1,14 @@
 import { Fragment, type ReactNode } from "react";
 
-/** Initials for an avatar, e.g. "Helgi Þór Jónsson" → "HÞ". */
+/** Initials for an avatar: the first letters of the first two names, e.g. "Helgi Þór Jónsson" → "HÞ". */
 export function initials(name: string): string {
   return name
-    .split(" ")
-    .map((part) => part[0])
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((part) => [...part][0] ?? "")
     .join("")
-    .slice(0, 2);
+    .toUpperCase();
 }
 
 /**

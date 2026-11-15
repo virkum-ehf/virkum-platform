@@ -8,6 +8,12 @@ describe("initials", () => {
     expect(initials("Helgi Már Þórðarson")).toBe("HM");
     expect(initials("Íris")).toBe("Í");
   });
+
+  it("ignores extra spaces and always returns capitals", () => {
+    expect(initials("  Kalman   Stefánsson ")).toBe("KS");
+    expect(initials("vilhjálmur matthíasson")).toBe("VM");
+    expect(initials("")).toBe("");
+  });
 });
 
 describe("noBreak", () => {
