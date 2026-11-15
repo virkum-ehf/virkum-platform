@@ -81,6 +81,8 @@
     background-color 0.3s,
     color 0.3s,
     border-color 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .tab[aria-selected="true"] .avatar {

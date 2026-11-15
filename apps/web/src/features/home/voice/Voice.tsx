@@ -20,11 +20,11 @@ export async function Voice() {
             <ScrubQuote text={t("quoteBody")} />
           </blockquote>
           <figcaption className={cn(styles.who, "reveal")}>
-            <span className={styles.avatar} aria-hidden="true">
+            <span className={styles.avatar} aria-hidden="true" translate="no">
               {initials(t("quoteName"))}
             </span>
             <span>
-              <strong>{t("quoteName")}</strong>
+              <strong translate="no">{t("quoteName")}</strong>
               <span>{t("quoteRole")}</span>
             </span>
           </figcaption>

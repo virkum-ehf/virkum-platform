@@ -51,7 +51,9 @@ export async function SiteFooter() {
           <div>
             <Logo variant="onDark" height={38} className={styles.logo} decorative />
             <p>
-              <strong className={styles.company}>{t("companyName")}</strong>
+              <strong className={styles.company} translate="no">
+                {t("companyName")}
+              </strong>
             </p>
             <p className={styles.blurb}>{t("companyBlurb")}</p>
           </div>
@@ -89,7 +91,7 @@ export async function SiteFooter() {
             {t("sourcesAfter")}
           </p>
           <p>
-            © {new Date().getFullYear()} Virkum ehf. · {t("rights")}
+            © {new Date().getFullYear()} <span translate="no">Virkum ehf.</span> · {t("rights")}
           </p>
         </div>
       </div>

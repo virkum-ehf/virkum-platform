@@ -101,10 +101,10 @@ export function QuoteTabs({ quotes, marks, label }: QuoteTabsProps) {
               onClick={() => select(i, true)}
               onKeyDown={onKeyDown}
             >
-              <span className={styles.avatar} aria-hidden="true">
+              <span className={styles.avatar} aria-hidden="true" translate="no">
                 {initials(quote.name)}
               </span>
-              <span className={styles.who}>
+              <span className={styles.who} translate="no">
                 <strong>{quote.name}</strong>
                 <span>{quote.company}</span>
               </span>

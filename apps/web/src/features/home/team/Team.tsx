@@ -26,7 +26,7 @@ export async function Team() {
           {members.map((member) => (
             <article key={member.name} className={cn(styles.member, "reveal")}>
               <img src={member.image} alt={member.name} width={104} height={104} loading="lazy" decoding="async" />
-              <h3>{member.name}</h3>
+              <h3 translate="no">{member.name}</h3>
               <p className={styles.role}>{member.role}</p>
               <ul className={styles.facts}>
                 {member.stats.map((fact) => (

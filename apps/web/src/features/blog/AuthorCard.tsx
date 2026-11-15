@@ -19,7 +19,7 @@ export function AuthorCard({ author, dates, labels, button, className }: AuthorC
       <div className={styles.me}>
         <img src={author.image} alt="" width={64} height={64} loading="lazy" decoding="async" />
         <div>
-          <strong>{author.name}</strong>
+          <strong translate="no">{author.name}</strong>
           <p className={styles.role}>{author.role}</p>
         </div>
       </div>

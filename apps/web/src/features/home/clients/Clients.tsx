@@ -17,7 +17,7 @@ export async function Clients() {
       <div className={cn("wrap", styles.inner)}>
         <p className={cn("t-label", styles.label)}>{clientsLabel}</p>
         <div className={styles.window}>
-          <ul className={styles.track}>
+          <ul className={styles.track} translate="no">
             {Array.from({ length: copies }, (_, copy) =>
               clients.map((client) => (
                 <li key={`${copy}-${client}`} aria-hidden={copy > 0 || undefined}>
