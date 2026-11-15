@@ -81,6 +81,8 @@ index, article page, RSS feeds, sitemap and search pick it up automatically.
 - Images have meaningful `alt` text, or `alt=""` when decorative. Icon-only links and buttons have an
   `aria-label`.
 - Animations respect `prefers-reduced-motion`.
+- Names of people, companies and brands, and avatar initials, carry `translate="no"`, so browser
+  translation (for example Chrome translating the Icelandic page) leaves them as they are.
 - The axe tests must stay at zero violations.
 
 ## Tests
