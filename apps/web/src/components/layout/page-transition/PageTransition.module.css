@@ -1,0 +1,41 @@
+/* Navy columns (one mint) cover the screen and fall away to reveal the new page. */
+.curtain {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 112vh;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  pointer-events: none;
+}
+
+.column {
+  display: block;
+  height: 100%;
+  margin-inline: -0.5px;
+  background: var(--color-navy);
+  clip-path: polygon(0 3.2%, 50% 0, 100% 3.2%, 100% 100%, 0 100%);
+  transform: scaleY(1);
+  transform-origin: 50% 0;
+}
+
+.mint {
+  background: var(--color-mint);
+}
+
+.revealing .column {
+  transform: scaleY(0);
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) calc(var(--i) * 14ms + 60ms);
+}
+
+.revealing .mint {
+  transition-delay: 330ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curtain {
+    display: none;
+  }
+}

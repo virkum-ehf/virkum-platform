@@ -1,0 +1,5 @@
+/* Virkum design system ("Virkum visual identity" v1.0). Import after `@import "tailwindcss"`. */
+@import "./tokens.css";
+@import "./base.css";
+@import "./components.css";
+@import "./motion.css";

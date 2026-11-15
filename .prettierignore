@@ -1,0 +1,10 @@
+pnpm-lock.yaml
+**/.next/
+**/out/
+**/dist/
+**/coverage/
+**/playwright-report/
+**/test-results/
+**/.turbo/
+apps/web/src/content/messages/*.json
+apps/web/public/

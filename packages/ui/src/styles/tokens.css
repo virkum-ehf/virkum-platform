@@ -1,0 +1,51 @@
+/* Brand tokens. Tailwind turns them into utilities (bg-navy, text-cobalt, font-display, rounded-card, nav:…),
+   and CSS Modules read the same variables (var(--color-navy)). `static` emits every variable, even one no
+   utility uses, so a token read only from a CSS Module or an inline style always exists. */
+@theme static {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-cobalt: #2b59ff; /* primary */
+  --color-cobalt-deep: #1f45d6; /* hover / pressed */
+  --color-cobalt-bright: #4f78ff; /* focus, links on dark */
+  --color-cobalt-wash: #eef2ff;
+  --color-navy: #1b2a6b; /* headings */
+  --color-mint: #2ee6a8; /* accent: the rising column (never as text on white) */
+  --color-green: #12a97a;
+  --color-green-deep: #0b7a57; /* green text on white */
+  --color-ink: #14181f; /* body text, dark backgrounds */
+  --color-slate: #5b6577; /* secondary text */
+  --color-mist: #dde3ec; /* borders */
+  --color-frost: #f4f7fb; /* page tint */
+
+  /* next/font sets --font-manrope and --font-inter on <html>. */
+  --font-*: initial;
+  --font-display: var(--font-manrope), Arial, sans-serif;
+  --font-sans: var(--font-inter), Arial, sans-serif;
+
+  --radius-control: 14px;
+  --radius-card: 24px;
+
+  /* Desktop navigation appears from here. */
+  --breakpoint-nav: 1080px;
+
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --on-dark-muted: rgba(255, 255, 255, 0.7);
+  /* Faint text stays at WCAG AA contrast (4.5:1) on navy as well as ink. */
+  --on-dark-faint: rgba(255, 255, 255, 0.56);
+  --on-dark-line: rgba(255, 255, 255, 0.12);
+
+  --maxw: 1280px;
+  --pad: clamp(20px, 5vw, 80px);
+  --section: clamp(88px, 9vw, 144px);
+  --header-h: 80px;
+}
+
+@media (max-width: 759px) {
+  :root {
+    --header-h: 68px;
+  }
+}

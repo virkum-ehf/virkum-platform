@@ -1,0 +1,99 @@
+.posts > li {
+  border-top: 1px solid var(--color-mist);
+}
+
+.posts > li:last-child {
+  border-bottom: 1px solid var(--color-mist);
+}
+
+.post {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  padding-block: 44px;
+}
+
+.meta {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.meta time {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-slate);
+}
+
+/* Where the search matched: in the title (cobalt) or in the text. */
+.match {
+  padding: 5px 9px;
+  border-radius: 8px;
+  border: 1px solid var(--color-mist);
+  font:
+    600 11px/1 var(--font-sans),
+    Arial,
+    sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+.matchTitle {
+  border-color: color-mix(in srgb, var(--color-cobalt) 35%, transparent);
+  background: var(--color-cobalt-wash);
+  color: var(--color-cobalt);
+}
+
+.content {
+  grid-column: 4 / 12;
+}
+
+.content h2 {
+  font-size: clamp(26px, 2.6vw, 38px);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.content h2 a {
+  transition: color 0.15s;
+}
+
+.content h2 a:hover {
+  color: var(--color-cobalt);
+}
+
+.content p {
+  font-size: 18px;
+  color: var(--color-slate);
+  margin-bottom: 20px;
+  max-width: 38em;
+}
+
+@media (max-width: 1079px) {
+  .content {
+    grid-column: 4 / 13;
+  }
+}
+
+@media (max-width: 759px) {
+  .post {
+    padding-block: 32px;
+  }
+
+  .meta,
+  .content {
+    grid-column: 1 / 13;
+  }
+
+  .meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 0;
+    margin-bottom: 14px;
+  }
+}

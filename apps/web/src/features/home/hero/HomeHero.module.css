@@ -1,0 +1,265 @@
+/* Full-width 3D basalt landscape; the section slides up under the sticky header. */
+.hero {
+  position: relative;
+  isolation: isolate;
+  margin-top: calc(-1 * var(--header-h));
+  min-height: clamp(660px, 100vh, 960px);
+  min-height: clamp(660px, 100svh, 960px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-navy);
+  color: #fff;
+}
+
+.field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  cursor: crosshair;
+}
+
+.field canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.fallback {
+  position: absolute;
+  right: 8%;
+  bottom: 24%;
+  width: min(44%, 520px);
+  height: auto;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(27, 42, 107, 0.97) 0%,
+      rgba(27, 42, 107, 0.9) 27%,
+      rgba(27, 42, 107, 0.45) 48%,
+      rgba(27, 42, 107, 0) 64%
+    ),
+    linear-gradient(0deg, rgba(27, 42, 107, 0.92) 0%, rgba(27, 42, 107, 0) 30%),
+    linear-gradient(180deg, rgba(27, 42, 107, 0.75) 0%, rgba(27, 42, 107, 0) 22%);
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--header-h) + 48px);
+  padding-bottom: 150px;
+  pointer-events: none;
+}
+
+.copy {
+  max-width: 630px;
+  pointer-events: auto;
+  will-change: transform, opacity;
+}
+
+.label {
+  margin-bottom: 28px;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.accent {
+  display: block;
+  color: var(--color-mint);
+}
+
+.lead {
+  color: rgba(255, 255, 255, 0.78) !important;
+  max-width: 32em;
+  margin-bottom: 40px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Label, lead and buttons fade up on load (the headline reveals word by word). */
+.enter {
+  animation: enter 0.9s var(--ease-brand) both;
+}
+
+.label.enter {
+  animation-delay: 0.05s;
+}
+
+.lead.enter {
+  animation-delay: 0.45s;
+}
+
+.actions.enter {
+  animation-delay: 0.6s;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Status line along the bottom */
+.status {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.statusInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 26px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.status ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.status li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-mint);
+  box-shadow: 0 0 0 4px rgba(46, 230, 168, 0.14);
+}
+
+/* Rising dots (guide p.21): the four dots above the i, a "running" cue. */
+.cue {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 6px;
+}
+
+.cue i {
+  display: block;
+  border-radius: 50%;
+  background: var(--color-mint);
+  animation: cue 2.4s ease-in-out infinite;
+}
+
+.cue i:nth-child(1) {
+  width: 10px;
+  height: 10px;
+}
+
+.cue i:nth-child(2) {
+  width: 8px;
+  height: 8px;
+  animation-delay: 0.18s;
+}
+
+.cue i:nth-child(3) {
+  width: 6px;
+  height: 6px;
+  animation-delay: 0.36s;
+}
+
+.cue i:nth-child(4) {
+  width: 4px;
+  height: 4px;
+  animation-delay: 0.54s;
+}
+
+@keyframes cue {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
+
+/* Phones: the 3D gets its own band at the top and fades into solid navy behind the text. */
+@media (max-width: 759px) {
+  .field {
+    bottom: auto;
+    height: 350px;
+  }
+
+  .fallback {
+    left: 12%;
+    right: 12%;
+    bottom: 40px;
+    width: auto;
+  }
+
+  .scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(27, 42, 107, 0.45) 0,
+      rgba(27, 42, 107, 0) 90px,
+      rgba(27, 42, 107, 0) 190px,
+      var(--color-navy) 340px
+    );
+  }
+
+  .inner {
+    align-items: flex-start;
+    padding-top: calc(var(--header-h) + 200px);
+    padding-bottom: 200px;
+  }
+
+  .status ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .statusInner {
+    align-items: flex-end;
+  }
+
+  .actions :global(.btn) {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enter,
+  .cue i {
+    animation: none;
+  }
+}

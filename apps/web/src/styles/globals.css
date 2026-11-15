@@ -1,0 +1,6 @@
+/* Entry stylesheet for virkum.is: Tailwind, then the Virkum design system. */
+@import "tailwindcss";
+@import "@virkum/ui/styles.css";
+
+/* Tailwind scans this app's sources automatically; workspace packages are added explicitly. */
+@source "../../../../packages/ui/src";

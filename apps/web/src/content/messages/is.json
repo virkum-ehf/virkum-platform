@@ -1,0 +1,669 @@
+{
+  "site": {
+    "name": "Virkum",
+    "tagline": "Rekstrarkerfi fyrir íslensk fyrirtæki: mælaborð, sjálfvirkni og vikulegur taktur."
+  },
+  "seo": {
+    "title": "Rekstrarkerfi fyrir íslensk fyrirtæki | Virkum",
+    "description": "Virkum smíðar rekstrarkerfi inn í íslensk fyrirtæki: mælaborð, sjálfvirkni og vikulegan takt. Þú sérð tölurnar, fyrirtækið gengur án þín.",
+    "keywords": [
+      "rekstrarráðgjöf",
+      "tæknilausnir",
+      "gervigreind",
+      "sjálfvirkni",
+      "stjórnendaþjálfun",
+      "námskeið",
+      "starfsmenntasjóður",
+      "Virkum",
+      "Ísland"
+    ],
+    "ogTitle": "Rekstrarkerfi fyrir íslensk fyrirtæki | Virkum",
+    "ogDescription": "Virkum smíðar rekstrarkerfi inn í íslensk fyrirtæki: mælaborð, sjálfvirkni og vikulegan takt. Þú sérð tölurnar, fyrirtækið gengur án þín.",
+    "ogImageAlt": "Virkum, rekstrarkerfi fyrir íslensk fyrirtæki",
+    "twitterDescription": "Virkum smíðar rekstrarkerfi inn í íslensk fyrirtæki: mælaborð, sjálfvirkni og vikulegan takt. Þú sérð tölurnar, fyrirtækið gengur án þín.",
+    "jsonLdDescription": "Virkum smíðar rekstrarkerfi inn í íslensk fyrirtæki: mælaborð, sjálfvirkni og vikulegan takt. Þú sérð tölurnar, fyrirtækið gengur án þín."
+  },
+  "header": {
+    "home": "Heim",
+    "services": "Þjónusta",
+    "selfAssessment": "Sjálfsmat",
+    "courses": "Námskeið",
+    "cases": "Raundæmi",
+    "ai": "Gervigreind",
+    "blog": "Blogg",
+    "language": "Tungumál",
+    "switchLanguage": "Skipta um tungumál",
+    "openMenu": "Opna valmynd",
+    "closeMenu": "Loka valmynd"
+  },
+  "common": {
+    "footerLegal": "Virkum ehf. · Rekstrarkerfi fyrir íslensk fyrirtæki.",
+    "bookCall": "Bóka fund",
+    "bookCallArrow": "Bóka fund →",
+    "bookSession": "Bóka fund"
+  },
+  "cookieBanner": {
+    "ariaLabel": "Tilkynning um vafrakökur og vefmælingar",
+    "bodyBefore": "Við notum Google Analytics 4 aðeins ef þú samþykkir, til að mæla notkun á síðunni. Ef þú hafnar eru engar greiningarkökur virkjaðar. Sjá nánar í ",
+    "privacyLink": "persónuverndarstefnu okkar",
+    "bodyAfter": ".",
+    "accept": "Samþykkja",
+    "reject": "Hafna"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Síðan fannst ekki.",
+    "description": "Slóðin sem þú baðst um er ekki til. Farðu aftur á forsíðuna.",
+    "homeLink": "Heim →"
+  },
+  "hero": {
+    "badge": "Rekstrarkerfi fyrir íslensk fyrirtæki",
+    "h1Line1": "Fyrirtækið þitt á að vera verkfæri, ",
+    "h1Middle": "",
+    "h1Accent": "ekki akkeri.",
+    "heroDescription": "Við smíðum rekstrarkerfi inn í fyrirtækið þitt: mælaborð sem sýna tölurnar, sjálfvirkni sem sparar tíma og vikulegan takt sem heldur öllu gangandi.",
+    "checks": [
+      "Þú sérð tölurnar í rauntíma",
+      "Endurtekin verkefni gerast sjálfkrafa",
+      "Fyrirtækið gengur þótt þú sért ekki á staðnum"
+    ],
+    "ctaAssessment": "Taktu 2 mínútna matið",
+    "ctaBook": "Bóka 60 mínútna fund"
+  },
+  "aiStat": {
+    "eyebrow": "Gervigreind í íslenskum rekstri",
+    "lineStrong": "50% íslenskra fyrirtækja nota gervigreind. ",
+    "lineMuted": "14% hafa mótað stefnu. ",
+    "lineAccent": "Við brúum þetta bil.",
+    "policyLink": "Lesa stefnu Virkum um gervigreind"
+  },
+  "marketContext": {
+    "sourceNote": "Heimildir: Almannarómur (2026), Staða gervigreindar á Íslandi 2026, kafli 2. Hagstofa Íslands (10. mars 2026), UT-könnun 2025.",
+    "bar1": "Nota gervigreindartækni",
+    "bar2": "Nota hana í skilgreindum vinnuferlum",
+    "bar3": "Hafa mótað formlega stefnu",
+    "gapNumber": "36",
+    "gapLabel": "prósentustiga gjá",
+    "gapBody": "Á milli fyrirtækja sem nota tæknina og þeirra sem stýra henni með skýrri stefnu.",
+    "ruleEyebrow": "LYKILMÆLING · BCG",
+    "ruleTitle": "10/20/70 reglan",
+    "ruleIntro": "Boston Consulting Group greindi hvar fyrirtæki sem ná raunverulegum árangri með gervigreind verja sínum kröftum.",
+    "card10Title": "Tæknin sjálf",
+    "card10Body": "Líkön, hugbúnaður og verkfæri. Yfirleitt ekki erfiðasti hlutinn.",
+    "card20Title": "Gögn og innviðir",
+    "card20Body": "Aðgengi, gæði og samþætting. Forsenda þess að verðmæti skapist.",
+    "card70Title": "Fólk og ferlar",
+    "card70Body": "Endurhönnun ferla, efling starfsfólks, stuðningur stjórnenda og breytingastjórnun.",
+    "failureCallout": "Þegar gervigreindarverkefni mistekst er það sjaldan tækninni að kenna. Það er 70% hlutinn sem var aldrei kláraður.",
+    "stepTie": "70% hlutinn, fólk og ferlar, er nákvæmlega það sem við gerum í skrefi 2.",
+    "quoteEyebrow": "RÖDD ÚR ÍSLENSKUM REKSTRI",
+    "quoteBody": "Innleiðing gervigreindar er ekki bara innleiðing á nýju tæki. Þetta er í grundvallaratriðum áskorun sem snýr að forystu, gögnum og breytingastjórnun.",
+    "quoteName": "Vilhelm Már Þorsteinsson",
+    "quoteRole": "Eimskip, forstjóri"
+  },
+  "statsBar": {
+    "stats": [
+      {
+        "number": "40+",
+        "label": "Fyrirtæki greind"
+      },
+      {
+        "number": "90%",
+        "label": "Halda áfram eftir skoðun"
+      },
+      {
+        "number": "30+",
+        "label": "Ára samanlögð reynsla"
+      }
+    ],
+    "clientsLabel": "Viðskiptavinir",
+    "clients": [
+      "Malbikstöðin",
+      "Lotus",
+      "Gæðaendurskoðun",
+      "Vegvísa",
+      "Fasteignafélagið"
+    ]
+  },
+  "problemSection": {
+    "eyebrow": "Vandamálið",
+    "title": "Hljómar þetta kunnuglega?",
+    "closingPrompt": "Ef þú kinkaðir kolli við eitt af þessu, þá er næsta skref 60 mínútna fundur.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Ég get ekki farið í frí án þess að allt stöðvist",
+        "desc": "Fyrirtækið er háð þér. Það er ekki rekstur, það er vinna."
+      },
+      {
+        "num": "02",
+        "title": "Sama verkefnið er endurtekið aftur og aftur",
+        "desc": "Enginn veit hvers vegna. Þetta hefur bara alltaf verið gert svona."
+      },
+      {
+        "num": "03",
+        "title": "Ég veit ekki hvaða viðskiptavinir eru arðbærir",
+        "desc": "Engin mælaborð. Engar tölur. Bara magatilfinning."
+      },
+      {
+        "num": "04",
+        "title": "Stórar ákvarðanir byggðar á innsæi",
+        "desc": "Engir lykilmælikvarðar, engin gögn, bara mánudagsmorgunstress."
+      }
+    ]
+  },
+  "serviceCards": {
+    "eyebrow": "Þjónusta",
+    "title": "Einfalt. Þrjú skref.",
+    "tagline": "Kerfin sem við smíðum eru þín eign. Við seljum kerfi, ekki tíma.",
+    "featuredPill": "Flestir viðskiptavinir",
+    "durationLabel": "Tímalengd",
+    "bookCall": "Bóka fund →",
+    "items": [
+      {
+        "step": "Skref 1",
+        "name": "Rekstrarskoðun",
+        "sub": "Við finnum flöskuhálsana",
+        "body": "Við vinnum með þér í 2-4 vikur, greinum fólk, ferla og tölur, og skilum 3-5 aðgerðum sem bæta árangur.",
+        "duration": "2-4 vikur",
+        "featured": false
+      },
+      {
+        "step": "Skref 2",
+        "name": "Vöxtur",
+        "sub": "Við innleiðum breytingarnar",
+        "body": "Mánaðarlegt samstarf þar sem við innleiðum kerfi, höldum uppi aga og tryggjum að árangurinn haldist. Árangurstengdar greiðslur þýða sameiginlega áhættu.",
+        "duration": "90 dagar +",
+        "featured": true
+      },
+      {
+        "step": "Skref 3",
+        "name": "Viðhald",
+        "sub": "Við höldum kerfunum gangandi",
+        "body": "Þegar grunnurinn er kominn, sjáum við um viðhald, fínstillingu og ný verkefni eftir þörfum. Þú færð teymi á bak við þig, ekki einstakt verkefni.",
+        "duration": "Í gangi",
+        "featured": false
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Meðmæli",
+    "title": "Fyrirtæki í innleiðingu.",
+    "featured": {
+      "name": "Vilhjálmur Matthíasson",
+      "company": "Malbikstöðin",
+      "quote": "Strákarnir hjá Virkum eru með þetta. Þeir mættu, hlustuðu og skildu reksturinn okkar á örfáum dögum. Núna höfum við yfirsýn sem við höfðum aldrei áður, og getum tekið ákvarðanir byggðar á tölum, ekki tilfinningu."
+    },
+    "cards": [
+      {
+        "name": "Alexander Haraldsson",
+        "company": "Lotus Car Rental",
+        "quote": "Þeir skilja bæði reksturinn og tæknina. Það er sjaldgæf samsetning. Við erum komin með ferla sem spara okkur tugi tíma á viku."
+      },
+      {
+        "name": "Kalman Stefánsson",
+        "company": "Gæðaendurskoðun",
+        "quote": "Fagleg og skipulögð vinnubrögð frá fyrsta degi. Þeir lögðu sig fram um að skilja okkar starfsemi áður en þeir lögðu til lausnir."
+      },
+      {
+        "name": "Kristrún Birgisdóttir",
+        "company": "Vegvísa",
+        "quote": "Virkum hannaði, þróaði og innleiddi veflausn okkar og hefur samstarfið verið faglegt og skilvirkt frá upphafi. Við erum afar ánægð með þjónustuna og mælum heilshugar með þjónustu Virkum."
+      }
+    ]
+  },
+  "teamSection": {
+    "eyebrow": "Teymið",
+    "titleLine1": "Vaxandi teymi.",
+    "titleLine2": "Einn vegvísir.",
+    "members": [
+      {
+        "name": "Helgi Már Þórðarson",
+        "image": "/TeamPhotos/Helgi.jpg",
+        "role": "Rekstur, vöxtur, breytingastjórnun",
+        "stats": [
+          "CCP 65→600 starfsmenn",
+          "aha.is meðstofnandi"
+        ]
+      },
+      {
+        "name": "Þór Tómasarson",
+        "image": "/TeamPhotos/Tor.jpg",
+        "role": "Gervigreind, sjálfvirkni og rekstrarkerfi",
+        "stats": [
+          "10+ ár í hagnýtri gervigreind",
+          "MSc Reikniverkfræði"
+        ]
+      },
+      {
+        "name": "Íris Líf Stefánsdóttir",
+        "image": "/TeamPhotos/Iris.jpg",
+        "role": "Fjármálastýring, rekstrareftirlit og stjórnarhættir",
+        "stats": [
+          "Fjármál",
+          "Bókhaldsrekstur"
+        ]
+      },
+      {
+        "name": "Tiago Tiradentes Cuzzuol Nunes",
+        "image": "/TeamPhotos/Tiago.jpg",
+        "role": "Hugbúnaðarþróun, notendaupplifun og útlitshönnun (UI/UX)",
+        "stats": [
+          "Hugbúnaðarverkfræði",
+          "Viðmótsþróun (frontend)"
+        ]
+      },
+      {
+        "name": "Muhammad Ahmad ul Haq",
+        "image": "/TeamPhotos/Muhammad.jpg",
+        "role": "Alhliða hugbúnaðarþróun (full stack)",
+        "stats": [
+          "Hugbúnaðarverkfræði",
+          "Viðmótsþróun (frontend)"
+        ]
+      },
+      {
+        "name": "Syed Muhammad Azhar",
+        "image": "/TeamPhotos/Syed.jpg",
+        "role": "Alhliða hugbúnaðarþróun (full stack)",
+        "stats": [
+          "Hugbúnaðarverkfræði",
+          "Viðmótsþróun (frontend)"
+        ]
+      }
+    ]
+  },
+  "ctaFooter": {
+    "titleLine1": "Eitt samtal.",
+    "titleLine2": "Engar skuldbindingar.",
+    "body": "60 mínútna fundur þar sem við leggjum mat á þitt fyrirtæki og segjum þér beint hvort við getum hjálpað, eða ekki.",
+    "bullet1": "✓ Engin skuldbinding",
+    "bullet2": "✓ Engin eftirfylgni nema þú biðjir um hana",
+    "bullet3": "✓ 100% trúnaður",
+    "bookCall": "Bóka fund →",
+    "companyName": "Virkum ehf.",
+    "courses": "Námskeið",
+    "blog": "Blogg",
+    "companyBlurb": "Rekstrarráðgjöf og tæknilausnir fyrir íslensk fyrirtæki sem vilja vaxa.",
+    "contactHeading": "Hafa samband",
+    "location": "Reykjavík, Ísland",
+    "companyHeading": "Fyrirtækið",
+    "kennitala": "Kennitala: 480524-1280",
+    "privacy": "Persónuverndarstefna",
+    "sourcesBefore": "Heimildir: Almannarómur (2026). Staða gervigreindar á Íslandi 2026, ",
+    "sourcesChapter": "kafli 2",
+    "sourcesAfter": ". Hagstofa Íslands (10. mars 2026), UT-könnun 2025. Boston Consulting Group (2026), Scaling AI requires new processes, not just new tools.",
+    "rights": "Allur réttur áskilinn."
+  },
+  "blog": {
+    "metaTitle": "Blogg um rekstur fyrir íslensk fyrirtæki | Virkum",
+    "tabTitle": "Blogg Virkum",
+    "metaDescription": "Greinar um rekstrarkerfi, vikulegan takt og gervigreind fyrir íslensk fyrirtæki. Mælaborð, ábyrgð og mörk í kringum gögn.",
+    "eyebrow": "Blogg",
+    "title": "Rekstrum sem gengur án þín",
+    "intro": "Stuttar greinar um mælaborð, takt og gervigreind. Skrifað fyrir eigendur og stjórnendur á Íslandi.",
+    "read": "Lesa grein",
+    "search": "Leita í greinum",
+    "empty": "Engin grein passar við leitina.",
+    "matchTitle": "Í titli",
+    "matchText": "Í texta greinar",
+    "back": "← Allar greinar",
+    "published": "Birt",
+    "updated": "Uppfært",
+    "related": "Fleiri greinar"
+  },
+  "caseHighlight": {
+    "eyebrow": "Raundæmi",
+    "title": "Malbikstöðin",
+    "body": "Yfirsýn yfir tölur, undirverktaka og daglegan takt, án aukinnar veltu.",
+    "link": "Sjá raundæmið",
+    "metrics": [
+      { "value": "50 m.kr./ár", "label": "Áætluð bæting á afkomu" },
+      { "value": "+26%", "label": "Tekjur á stöðugildi" },
+      { "value": "37", "label": "Stöðugildi" }
+    ]
+  },
+  "caseStudy": {
+    "intro": "Eftirfarandi er útdráttur úr greiningu sem Virkum vann fyrir íslenskt verktakafyrirtæki með u.þ.b. 1,6 ma.kr. veltu og 37 stöðugildi.",
+    "estimated": "Áætluð bæting á afkomu",
+    "result": "50 m.kr./ár",
+    "summary": "Líklegasta sviðsmynd, án aukinnar veltu eða fjölgunar stöðugilda. Greining Virkum sýndi að raunhæft sé að bæta afkomu um 25–80 m.kr. á ári með formlegri stýringu undirverktaka, skýrara skipuriti og markvissri sjálfvirknivæðingu.",
+    "strengthsLabel": "Styrkleikar",
+    "strengthsBody": "Arðbær rekstur, sterk eiginfjárstaða (50,1%), stöðug framlegð (66,6%) og aukin skilvirkni á stöðugildi. Tekjur á stöðugildi hafa hækkað úr 33,7 í 42,5 m.kr., aukning upp á 26% á tveimur árum.",
+    "risksLabel": "Áhættuþættir og tækifæri",
+    "risksBody": "Vaxandi háð undirverktökum (aðkeypt þjónusta jókst um 54% milli ára), óljóst verklag um stýringu aðkeyptrar þjónustu og aukin þörf á formlegum stjórnunarferlum samhliða fyrirhugaðri skiptingu félagsins.",
+    "scenariosTitle": "Þrjár sviðsmyndir næstu 12 mánaða",
+    "scenariosIntro": "Sama velta, ólíkar afkomur eftir því hversu vel umbætur skila sér. Forsendur byggja á því hve stór hluti tíma skilar sér í bætta afkomu.",
+    "scenarioSuffix": "sviðsmynd",
+    "scenarioMetricLabel": "Afkomuhlutfall",
+    "recommendationsTitle": "Forgangsaðgerðir Virkum",
+    "closingLabel": "Lokaorð Virkum",
+    "closingBody": "Félagið er vel rekið og arðbært. Greiningin beinist því ekki að leiðréttingu á vanrekstri, heldur að tækifærum til að festa núverandi árangur og búa félagið undir næsta rekstrarfasa, án þess að auka veltu eða fjölga stöðugildum.",
+    "metrics": [
+      { "label": "Rekstrartekjur", "value": "1.592", "unit": "m.kr.", "change": "↑ 18,4%" },
+      { "label": "Afkoma ársins", "value": "204", "unit": "m.kr.", "change": "↑ 21,9%" },
+      { "label": "Afkomuhlutfall", "value": "12,8%", "unit": "", "change": "↑ 0,4 pp" },
+      { "label": "Aðkeypt þjónusta", "value": "257", "unit": "m.kr.", "change": "↑ 54,0%" }
+    ],
+    "scenarios": [
+      { "name": "Varkár", "from": "12,8% → 14,3%", "amount": "~25 m.kr./ár" },
+      { "name": "Líklegasta", "from": "12,8% → 15,8%", "amount": "~50 m.kr./ár", "highlight": true },
+      { "name": "Bjartsýn", "from": "12,8% → 17,8%", "amount": "~80 m.kr./ár" }
+    ],
+    "recommendations": [
+      {
+        "tag": "Brýnast · 30 dagar",
+        "title": "Formlegt verklag um stýringu undirverktaka",
+        "body": "Aðkeypt þjónusta óx um 54% á einu ári og nemur nú 16% af rekstrartekjum. Án formlegs ferlis um val, greiningu og eftirfylgni skerðist framlegðin á hverju verki."
+      },
+      {
+        "tag": "30–90 dagar",
+        "title": "Stafræn tímaskráning og stöðluð tilboðsgerð",
+        "body": "Farsímalausn fyrir tímaskráningu og staðlað verðkerfi byggt á raungögnum sparar ~10 klst/viku á verkstjóra og sölumann samanlagt, og bætir nákvæmni tilboða."
+      },
+      {
+        "tag": "30–90 dagar",
+        "title": "Mælaborð stjórnenda í rauntíma",
+        "body": "Sjálfvirkt mælaborð fyrir tekjur, hagnað á verki, stöðu krafna og nýtingu starfsmanna. Leysir af handvirk mánaðaryfirlit og bætir ákvarðanatöku hluthafa."
+      },
+      {
+        "tag": "Eftir 90 daga",
+        "title": "Kerfisbundin viðskiptamannagrunnur (CRM)",
+        "body": "Fyrri viðskiptavinir eru verðmætasta söluleiðin, viðhald og endurnýjanir kosta brot af því sem ný sölumeðferð gerir. Án kerfisbundinnar eftirfylgni eru tækifærin ekki nýtt."
+      }
+    ]
+  },
+  "grantsSection": {
+    "eyebrow": "Styrkir",
+    "title": "Lækkaðu kostnað um allt að 90%",
+    "body": "Starfsmenntasjóðir geta endurgreitt allt að 90% af ráðgjafar- og þjálfunarkostnaði. Við sjáum um umsóknirnar.",
+    "link": "Skoða námskeiðslýsingar",
+    "metrics": [
+      {
+        "number": "90%",
+        "label": "endurgreitt"
+      },
+      {
+        "number": "390þ",
+        "label": "hámark á starfsmann"
+      },
+      {
+        "number": "4M",
+        "label": "hámark á fyrirtæki"
+      }
+    ]
+  },
+  "sjalfsmatQuiz": {
+    "progress": "Spurning {current} af {total}",
+    "back": "← Til baka",
+    "next": "Næsta",
+    "seeResult": "Sjá niðurstöðu",
+    "bookCall": "Bóka ókeypis 60 mínútna fund",
+    "retake": "Taka aftur",
+    "results": {
+      "low": {
+        "eyebrow": "{score} AF 10 · LÍTIL ÁSKORUN",
+        "title": "Reksturinn þinn er á sterkri braut.",
+        "body": "Þú ert þegar með marga grunnþætti til staðar: mælaborð, skýra ábyrgð og sjálfvirkni í daglegum vinnuferlum. Þjónusta Virkum er ef til vill ekki aðkallandi eins og er."
+      },
+      "mid": {
+        "eyebrow": "{score} AF 10 · SKÝRT TÆKIFÆRI",
+        "title": "Grunnurinn er traustur, en það eru eyður.",
+        "body": "Reksturinn virkar, en nokkur svið eru veikari en þau ættu að vera. Hnitmiðuð rekstrarskoðun mun leiða í ljós hvað megi bæta á næstu 6-12 mánuðum."
+      },
+      "high": {
+        "eyebrow": "{score} AF 10 · TÍMI TIL AÐGERÐA",
+        "title": "Þú hefur mikið að vinna með því að grípa til aðgerða.",
+        "body": "Miðað við svör þín hvílir reksturinn of mikið á þér, handavinna étur upp tíma og gögn fyrir ákvarðanatöku eru ekki aðgengileg þegar þörf er á. Þetta er nákvæmlega það sem Virkum hjálpar til við að laga."
+      }
+    },
+    "questions": [
+      {
+        "question": "Ef þú færir í 2 vikna frí í dag, myndi reksturinn halda áfram eðlilega?",
+        "options": [
+          {
+            "label": "Já, allt gengur án mín",
+            "score": 0
+          },
+          {
+            "label": "Að mestu, en sum mál myndu bíða",
+            "score": 1
+          },
+          {
+            "label": "Nei, margt myndi stöðvast",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "Hversu oft ertu að bregðast við í stað þess að skipuleggja?",
+        "options": [
+          {
+            "label": "Sjaldan, ég einbeiti mér að stefnumótun",
+            "score": 0
+          },
+          {
+            "label": "Vikulega",
+            "score": 1
+          },
+          {
+            "label": "Daglega, ég er stöðugt að slökkva elda",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "Ertu með mælaborð sem sýnir stöðu rekstursins í rauntíma?",
+        "options": [
+          {
+            "label": "Já, lykilmælikvarðar uppfærast sjálfkrafa",
+            "score": 0
+          },
+          {
+            "label": "Að hluta, ég tek þetta saman handvirkt",
+            "score": 1
+          },
+          {
+            "label": "Nei, þetta byggist að mestu á magatilfinningu",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "Veistu hvaða starfsmenn og verkefni skila mestum hagnaði?",
+        "options": [
+          {
+            "label": "Já, mjög skýrt",
+            "score": 0
+          },
+          {
+            "label": "Óljóst, ég ætti að greina þetta betur",
+            "score": 1
+          },
+          {
+            "label": "Nei, við mælum þetta ekki",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "Hversu marga handvirka vinnuferla í daglegum rekstri ætti að sjálfvirknivæða?",
+        "options": [
+          {
+            "label": "Fáa, flest er þegar sjálfvirkt",
+            "score": 0
+          },
+          {
+            "label": "Nokkra, endurteknir núningstoppar",
+            "score": 1
+          },
+          {
+            "label": "Margir, þeir taka of mikinn tíma",
+            "score": 2
+          }
+        ]
+      }
+    ]
+  },
+  "sjalfsmatPage": {
+    "metaTitle": "Sjálfsmat: hversu sjálfstæður er reksturinn | Virkum",
+    "metaDescription": "Tveggja mínútna sjálfsmat fyrir íslensk fyrirtæki. Fimm spurningar um tölur, takt og ábyrgð, og hvort Virkum henti þér.",
+    "eyebrow": "Sjálfsmat",
+    "titleBefore": "Hversu sjálfstæður er ",
+    "titleAccent": "reksturinn þinn?",
+    "intro": "Fimm spurningar. Tvær mínútur. Fáðu fljóta yfirsýn yfir hvar reksturinn þinn stendur, og hvort Virkum geti hjálpað."
+  },
+  "daemiPage": {
+    "metaTitle": "Dæmi: verktakafyrirtæki með 37 stöðugildi | Virkum",
+    "metaDescription": "Útdráttur úr greiningu Virkum á verktakafyrirtæki með 1,6 ma.kr. veltu og 37 stöðugildi: flöskuhálsar, mælaborð og hvað þarf að breytast.",
+    "eyebrow": "Dæmi úr rekstri",
+    "titleBefore": "Hvernig lítur rekstrarskoðun út ",
+    "titleAccent": "í alvörunni?"
+  },
+  "gervigreindPage": {
+    "metaTitle": "Gervigreind í íslenskum rekstri | Virkum",
+    "metaDescription": "Hvernig Virkum notar gervigreind í daglegum rekstri, mörkin í kringum gögn viðskiptavina, og hvernig íslensk fyrirtæki móta eigin stefnu.",
+    "eyebrow": "Stefna Virkum",
+    "titleBefore": "Gervigreind hjá ",
+    "titleAccent": "Virkum.",
+    "intro": "Virkum notar gervigreind markvisst í daglegum störfum, sem verkfæri, ekki töfralausn. Þetta er okkar afstaða til þess hvernig við notum hana og hvernig við styðjum viðskiptavini okkar.",
+    "ctaTitle": "Viltu ræða gervigreind í þínum rekstri?",
+    "ctaBody": "Bókaðu ókeypis 60 mínútna fund þar sem við förum yfir hvar gervigreind getur skilað mestu virði fyrir þitt fyrirtæki, og hvar hún ætti ekki að vera notuð.",
+    "sections": [
+      {
+        "title": "Grundvallarreglur",
+        "body": "Gervigreind flýtir fyrir vinnu; hún kemur ekki í stað dómgreindar. Allt sem við afhendum viðskiptavinum fer í gegnum mannlega rýni. Ábyrgðin hvílir alltaf hjá þeim einstaklingi sem skrifar undir."
+      },
+      {
+        "title": "Gögn viðskiptavina",
+        "body": "Við sendum aldrei trúnaðargögn viðskiptavina inn í opinber gervigreindarkerfi án samþykkis. Fyrir viðkvæm verkefni notum við greiddar áskriftir með enterprise-skilmálum sem banna þjálfun á þínum gögnum. Persónugreinanlegar upplýsingar eru hreinsaðar áður en þær fara inn í nokkur kerfi."
+      },
+      {
+        "title": "Til hvers við notum hana",
+        "body": "Við notum gervigreind við undirbúning, greiningu, uppkastagerð og rannsóknir. Það gerir vinnuna hraðari og dýpri. Viðskiptavinir fá betri útkomu á skemmri tíma, ekki ódýrari vinnu af minni gæðum."
+      },
+      {
+        "title": "Hvað við gerum ekki",
+        "body": "Við áframsendum ekki óyfirfarin atriði frá gervigreind beint til viðskiptavina. Við látum gervigreind ekki taka ákvarðanir er varða starfsmenn, ráðningar, uppsagnir eða frammistöðumat. Við seljum ekki „gervigreind“ sem sjálfstæða vöru."
+      },
+      {
+        "title": "Viðskiptavinir okkar",
+        "body": "Nýleg könnun Hagstofunnar sýnir að 50% íslenskra fyrirtækja nota gervigreind en aðeins 14% hafa formlega notkunarstefnu. Þetta bil í daglegri notkun án skýrra marka er ein stærsta rekstraráhætta nútímans.\n\nVið hjálpum viðskiptavinum að brúa það: skilgreina stefnu, afmarka notkunartilfelli og fella hana inn í reksturinn, ekki sem eitt verkefni, heldur sem hluta af eðlilegum þroska fyrirtækisins."
+      }
+    ]
+  },
+  "personuverndPage": {
+    "metaTitle": "Persónuvernd, kökur og greining | Virkum",
+    "metaDescription": "Hvaða gögn Virkum vistar úr snertifærslum og bókun, hvenær Google Analytics hleðst, og hvernig kökur og tungumálaval sitja í vafranum.",
+    "title": "Persónuverndarstefna",
+    "intro": "Virkum ehf. leggur áherslu á að vernda persónuupplýsingar gesta virkum.is og notenda þjónustu okkar. Þessi stefna lýsir því hvaða gögnum við söfnum, hvers vegna við söfnum þeim og hvernig þú getur nýtt réttindi þín.",
+    "h2collect": "Gögn sem við söfnum",
+    "pcollect": "Við söfnum upplýsingum sem þú lætur okkur í té beint, til dæmis nafni, netfangi, símanúmeri og nafni fyrirtækis, þegar þú hafnar sambandi við okkur eða bókar í gegnum bókunartengilinn okkar. Þegar þú bókar í gegnum Calendly eru gögn sem þú sendir inn meðhöndluð af Calendly sem sjálfstæðri þjónustu samkvæmt persónuverndarstefnu og skilmálum Calendly.",
+    "h2use": "Hvernig við notum gögn",
+    "puse": "Gögn eru eingöngu notuð til að svara fyrirspurnum, veita umbeðna þjónustu og senda umbeðið efni. Við seljum aldrei gögn til þriðja aðila.",
+    "h2cookies": "Vafrakökur, vefgreining og gagnavistun",
+    "pcookies": "Við notum Google Analytics 4 (GA4) til að greina hvernig virkum.is er notuð. Greiningartækið og tengdar vafrakökur eru aðeins virkjaðar ef þú velur „Samþykkja“. Ef þú velur „Hafna“, eða gefur ekki samþykki, eru þær ekki notaðar.",
+    "pcookiesDetail": "GA4 vinnur úr tækni- og notkunarupplýsingum (svo sem flettingum, áætlaðri staðsetningu út frá IP-tölu, upplýsingum um vafra og auðkennum í vafrakökum) til að búa til tölfræðilega samantekt. Við notum ekki GA4 til að birta sérsniðnar auglýsingar. Upplýsingar um val þitt á vefgreiningu og tungumáli eru geymdar í vafranum þínum (localStorage) svo við þurfum ekki að spyrja aftur við næstu heimsókn. Tenglar á síðunni geta vísað á vefi þriðja aðila (t.d. Calendly); þegar þú yfirgefur virkum.is gilda persónuverndarskilmálar viðkomandi vefsvæðis.",
+    "h2rights": "Réttindi þín",
+    "prightsBefore": "Þú átt rétt á að biðja um afrit af gögnum þínum og biðja um leiðréttingu eða eyðingu. Sendu beiðnir á ",
+    "prightsAfter": ".",
+    "h2changes": "Breytingar",
+    "pchanges": "Þessi stefna gæti verið uppfærð."
+  },
+  "namskeidPage": {
+    "metaTitle": "Námskeið í rekstri fyrir íslensk fyrirtæki | Virkum",
+    "metaDescription": "Námskeið í rekstri og stjórnun fyrir eigendur og stjórnendur. Allt að 90% af styrkhæfum kostnaði geta verið endurgreidd í gegnum starfsmenntasjóði.",
+    "eyebrow": "Námskeiðaskrá",
+    "titleLine1": "Fræðsla og efling",
+    "titleAccent": "fyrir fyrirtæki.",
+    "intro": "Öll námskeið eru hönnuð fyrir eigendur og stjórnendur sem vilja öflugri rekstur. Styrkhæfur þjálfunarkostnaður getur verið endurgreiddur í gegnum starfsmenntasjóði.",
+    "audienceLabel": "Markhópur",
+    "contentLabel": "Innihald",
+    "didYouKnow": "Vissir þú?",
+    "automationTitle": "Sjálfvirkni og þjálfun, tveir hlutar sömu áætlunar.",
+    "automationBody": "Þegar Virkum innleiðir kerfi, mælaborð eða sjálfvirkni, þá samanstendur verkefnið af tveimur hlutum: innleiðingu og þjálfun. Innleiðing, uppsetning, samþætting og ráðgjöf, er fjárfesting fyrirtækisins. Þjálfun, að kenna starfsfólki á nýju kerfin, er oft styrkhæf til endurgreiðslu.",
+    "implTitle": "Innleiðing",
+    "implBody": "Uppsetning kerfa, sjálfvirkni, mælaborð og gagnaflæði. Greitt af fyrirtækinu.",
+    "trainTitle": "Þjálfun",
+    "trainBody": "Hagnýt þjálfun á nýjum kerfum og vinnuferlum. Allt að 90% endurgreitt.",
+    "automationFootnote": "Það þýðir að heildarkostnaður verkefnis getur lækkað um u.þ.b. 25–35% þegar þjálfunarhlutinn er endurgreiddur.",
+    "reimbTitle": "Allt að 90% endurgreitt.",
+    "reimbBody": "Starfsmenntasjóðir endurgreiða þjálfunarkostnað fyrirtækja. Við hjálpum til við að finna rétta sjóðinn og styðjum við umsóknarferlið.",
+    "metrics": [
+      {
+        "number": "90%",
+        "label": "endurgreitt"
+      },
+      {
+        "number": "390þ",
+        "label": "á hvern starfsmann"
+      },
+      {
+        "number": "4M",
+        "label": "hámark á fyrirtæki"
+      }
+    ],
+    "howTitle": "Hvernig virkar endurgreiðsla?",
+    "howBody": "Fyrirtæki sem greiða í starfsmenntasjóði geta sótt um endurgreiðslu eftir afhendingu með því að leggja fram reikning, greiðslukvittun og þátttakendalista. Við hjálpum viðskiptavinum að klára ferlið án aukakostnaðar.",
+    "moreTitle": "Viltu vita meira?",
+    "moreBody": "Bókaðu 60 mínútna kynningu til að greina hvaða námskeið henta þínu fyrirtæki og áætla endurgreiðslu.",
+    "courses": [
+      {
+        "title": "Rekstrargreining og aðgerðaáætlun",
+        "duration": "2–4 vikur",
+        "price": "150.000 kr.",
+        "description": "Skipulögð greining á rekstri fyrirtækisins, fólki, ferlum, kerfum og tölum. Niðurstaðan er skýr aðgerðaáætlun með 3–5 forgangsverkefnum sem hafa mest áhrif á árangur á næstu 6–12 mánuðum. Þátttakendur fá bæði greininguna og þjálfun í að nota gögnin við ákvarðanatöku.",
+        "markhopur": "Eigendur, framkvæmdastjórar og stjórnendateymi í fyrirtækjum með 10–100 starfsmenn.",
+        "innihald": "Fjárhagsgreining, ferlagreining, teymismat, viðtöl við lykilfólk, aðgerðaáætlun og kynning."
+      },
+      {
+        "title": "Markmiðasetning og mælaborð",
+        "duration": "2 daga vinnustofa + eftirfylgni",
+        "price": "250.000 kr.",
+        "description": "Vinnustofa þar sem stjórnendateymið setur mælanleg 90 daga markmið, skilgreinir lykilmælikvarða (KPIs) og byggir mælaborð sem sýnir stöðu rekstursins í rauntíma. Þátttakendur læra að stýra með tölum í stað magatilfinningar.",
+        "markhopur": "Stjórnendateymi (3–8 manns). Eigendur og allir sem bera ábyrgð á rekstrarárangri.",
+        "innihald": "90 daga markmiðasetning, val og skilgreining KPI, uppsetning mælaborðs, vikuleg eftirfylgni í 4 vikur."
+      },
+      {
+        "title": "Fundartaktur og ábyrgð",
+        "duration": "1 dagur + 8 vikna þjálfun",
+        "price": "290.000 kr.",
+        "description": "Þjálfun til að koma á virkum vikulegum fundartakti sem heldur teyminu ábyrgu, leysir mál hratt og tryggir samstillingu. Inniheldur einn vinnustofudag og 8 vikna þjálfun þar sem við tökum þátt í fundum ykkar og kennum rétta taktinn.",
+        "markhopur": "Stjórnendateymi sem eyða of miklum tíma í lágvirðisfundi, eða skortir fasta fundabyggingu.",
+        "innihald": "Dagskrá funda, greining vandamála og lausnamiðun, flutningur ábyrgðar, eftirfylgnikerfi og leiðtogaþjálfun í fundarstjórn."
+      },
+      {
+        "title": "Stefnumótun og framtíðarsýn",
+        "duration": "2 daga vinnustofa",
+        "price": "350.000 kr.",
+        "description": "Tveggja daga vinnustofa þar sem stjórnendateymið skilgreinir grunngildi, stefnumarkandi áherslur, 3 ára mynd og 1 árs áætlun. Niðurstaðan er eitt skjal sem allir í fyrirtækinu geta lesið og skilið, stefna á einni síðu. Þátttakendur læra aðferð sem hægt er að endurtaka á hverjum ársfjórðungi.",
+        "markhopur": "Eigendur og stjórnendateymi sem vilja samstilla fólk, ferla og markmið undir einni skýrri stefnu.",
+        "innihald": "Grunngildi, stefnumarkandi fókus, 10 ára markmið, 3 ára mynd, 1 árs áætlun, 90 daga forgangsröðun og framtíðarsýn á einni síðu."
+      },
+      {
+        "title": "Gervigreind og sjálfvirkni í daglegum rekstri",
+        "duration": "1 dags vinnustofa",
+        "price": "190.000 kr.",
+        "description": "Hagnýt vinnustofa þar sem stjórnendur og starfsfólk læra að nota gervigreind og sjálfvirkni til að spara tíma í daglegum verkefnum. Engin djúp tækniþekking nauðsynleg, við byrjum á raunverulegum verkefnum úr ykkar rekstri og sýnum hvernig tæknin leysir þau.",
+        "markhopur": "Allir í fyrirtækinu, frá eiganda til framlínu. Sérstaklega teymi sem eyða tíma í handvirka, endurtekna vinnu.",
+        "innihald": "AI verkfæri fyrir skrifstofustörf, sjálfvirk skýrslugerð, sjálfvirkni í samskiptum, ferlagreining og tækifæri til sjálfvirkni."
+      },
+      {
+        "title": "Teymisþjálfun og ábyrgðarkerfi",
+        "duration": "1 dagur + ársfjórðungsleg eftirfylgni",
+        "price": "290.000 kr.",
+        "description": "Þjálfun í að byggja upp skýrt ábyrgðarkerfi þar sem hvert sæti hefur eiganda, hvert hlutverk er skilgreint og rétt fólk er í réttum sætum. Þátttakendur læra að meta teymið kerfisbundið og taka erfiðar ákvarðanir um starfsfólk á faglegum grunni.",
+        "markhopur": "Eigendur og leiðtogar sem finna að eitthvað er bilað í teyminu en geta ekki staðsett hvað það er.",
+        "innihald": "Ábyrgðarkort, hlutverkaskilgreiningar, teymismat, ráðningarrammi og ársfjórðungsleg endurskoðun."
+      },
+      {
+        "title": "Þjálfun í nýjum kerfum og sjálfvirkni",
+        "duration": "Eftir þörfum (2–8 einingar)",
+        "price": "Frá 95.000 kr. á einingu",
+        "description": "Þegar nýtt kerfi eða sjálfvirkni er innleidd þarf starfsfólk hagnýta þjálfun. Þessi áætlun er sniðin að hverju fyrirtæki út frá þeim verkfærum og vinnuferlum sem voru innleidd, mælaborð, verkefnatól, sjálfvirk samskipti eða gagnaflæði.",
+        "markhopur": "Starfsfólk og leiðtogar sem hafa fengið nýjar innleiðingar og þurfa hagnýta þjálfun, ekki bara sýnikennslu, þar til kerfið er orðið hluti af daglegri vinnu.",
+        "innihald": "Kerfisyfirferð, æfingar á raunverulegum verkefnum, úrræðaleit, skjölun á sjálfvirkniferlum og eftirfylgni til að tryggja notkun."
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+/* Word-by-word masked reveal. Runs as a CSS animation on load, so it never waits for scripts. */
+.word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+
+.word > span {
+  display: inline-block;
+  animation: word-up 0.95s var(--ease-brand) both;
+  animation-delay: calc(var(--wi) * 55ms + 80ms);
+}
+
+@keyframes word-up {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word > span {
+    animation: none;
+  }
+}

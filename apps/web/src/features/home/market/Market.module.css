@@ -1,0 +1,297 @@
+/* AI statistic with the 3D grid of 100 companies */
+.stat {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  align-items: center;
+}
+
+.copy {
+  grid-column: 1 / 8;
+}
+
+.copy :global(.t-label) {
+  margin-bottom: 28px;
+}
+
+.line {
+  font:
+    800 clamp(30px, 3.6vw, 54px) / 1.14 var(--font-display),
+    Arial,
+    sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+}
+
+.muted {
+  color: var(--color-slate);
+}
+
+.hot {
+  cursor: default;
+  text-decoration: underline dotted 2px;
+  text-decoration-color: rgba(43, 89, 255, 0.28);
+  text-underline-offset: 0.18em;
+  transition:
+    opacity 0.3s ease,
+    text-decoration-color 0.3s ease;
+}
+
+.hot:hover {
+  text-decoration-color: currentColor;
+}
+
+.faded {
+  opacity: 0.28;
+}
+
+.source {
+  margin-top: 28px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-slate);
+  max-width: 52em;
+}
+
+.grid {
+  grid-column: 8 / 13;
+}
+
+.gridField {
+  position: relative;
+  height: clamp(300px, 30vw, 430px);
+}
+
+.gridField canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Without WebGL the key alone remains, under the sentence. */
+.gridFailed .gridField {
+  display: none;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: -18px;
+  font:
+    800 22px/1 var(--font-display),
+    Arial,
+    sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+}
+
+.gridFailed .key {
+  margin-top: 0;
+  justify-content: flex-start;
+}
+
+.key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.key i {
+  width: 12px;
+  height: 22px;
+  clip-path: polygon(0 22%, 50% 0, 100% 22%, 100% 100%, 0 100%);
+}
+
+.keyUse i {
+  background: #9db2ff;
+}
+
+.keyPolicy i {
+  background: var(--color-cobalt);
+}
+
+/* The 10/20/70 rule */
+.rule {
+  margin-top: clamp(96px, 9vw, 144px);
+  padding-top: clamp(64px, 6vw, 96px);
+  border-top: 1px solid var(--color-mist);
+}
+
+.ruleHead {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  align-items: end;
+  margin-bottom: 56px;
+}
+
+.ruleHead > div {
+  grid-column: 1 / 7;
+}
+
+.ruleHead :global(.t-label) {
+  margin-bottom: 20px;
+}
+
+.ruleHead > :global(.t-lead) {
+  grid-column: 8 / 13;
+}
+
+/* 20 columns = 100%, 5% each, tight gaps like the logo's columns */
+.bar {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+  gap: 20px clamp(4px, 0.85vw, 12px);
+  margin-bottom: 56px;
+}
+
+.bar b {
+  font:
+    800 clamp(22px, 2.2vw, 32px) / 1 var(--font-display),
+    Arial,
+    sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+}
+
+.bar.hasHot b {
+  transition-delay: 0s;
+}
+
+.col {
+  display: block;
+  aspect-ratio: 1 / 2.6;
+  clip-path: polygon(0 11.2%, 50% 0, 100% 11.2%, 100% 100%, 0 100%);
+  transition-property: transform, translate, opacity;
+  transition-duration: 0.95s, 0.35s, 0.3s;
+  transition-timing-function: var(--ease-brand);
+  transition-delay: calc(var(--i, 0) * var(--step, 45ms) + var(--d, 0ms)), 0s, 0s;
+}
+
+.bar .g1 {
+  background: var(--color-mist);
+}
+
+.bar .g2 {
+  background: #9db2ff;
+}
+
+.bar .g3 {
+  background: var(--color-cobalt);
+}
+
+.hasHot .col,
+.hasHot b {
+  opacity: 0.22;
+}
+
+.bar.hasHot .isHot {
+  opacity: 1;
+}
+
+.bar .col.isHot {
+  translate: 0 -12px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  cursor: default;
+  padding-top: 24px;
+  border-top: 2px solid var(--color-mist);
+}
+
+.cards .g2 {
+  border-top-color: #9db2ff;
+}
+
+.cards .g3 {
+  border-top-color: var(--color-cobalt);
+}
+
+.cards.hasHot .card:not(.isHot) {
+  opacity: 0.4;
+}
+
+.pct {
+  font:
+    800 15px/1 var(--font-display),
+    Arial,
+    sans-serif;
+  color: var(--color-cobalt);
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.card p:not(.pct) {
+  color: var(--color-slate);
+}
+
+.callout {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  margin-top: clamp(64px, 6vw, 96px);
+}
+
+.callout p {
+  grid-column: 1 / 10;
+  font:
+    700 clamp(22px, 2.2vw, 30px) / 1.4 var(--font-display),
+    Arial,
+    sans-serif;
+  letter-spacing: -0.015em;
+  color: var(--color-navy);
+}
+
+@media (max-width: 1079px) {
+  .copy,
+  .grid {
+    grid-column: 1 / 13;
+  }
+
+  .grid {
+    margin-top: 32px;
+  }
+
+  .ruleHead > div,
+  .ruleHead > :global(.t-lead) {
+    grid-column: 1 / 13;
+  }
+
+  .ruleHead > :global(.t-lead) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 759px) {
+  .gridField {
+    height: clamp(260px, 72vw, 340px);
+  }
+
+  .bar {
+    gap: 4px;
+    margin-bottom: 40px;
+  }
+
+  .bar b {
+    display: none;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .callout p {
+    grid-column: 1 / 13;
+  }
+}

@@ -1,0 +1,206 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-ink);
+  color: #fff;
+}
+
+.main {
+  position: relative;
+  padding-top: var(--section);
+  padding-bottom: calc(var(--section) + 210px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  align-items: end;
+}
+
+.copy {
+  grid-column: 1 / 8;
+}
+
+.title {
+  font-size: clamp(40px, 4.6vw, 68px);
+  line-height: 1.04;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.title :global(.accent) {
+  display: block;
+  color: var(--color-mint);
+}
+
+.body {
+  font-size: clamp(18px, 1.45vw, 20px);
+  line-height: 1.6;
+  color: var(--on-dark-muted);
+  max-width: 32em;
+}
+
+.ticks {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.tick {
+  color: var(--color-mint);
+  margin-right: 2px;
+}
+
+.action {
+  grid-column: 9 / 13;
+  justify-self: end;
+}
+
+/* 3D skyline (and its flat fallback) along the bottom of the call to action */
+.skyline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 260px;
+}
+
+.skyline canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.silhouette {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 190px;
+  pointer-events: none;
+}
+
+.silhouette svg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max(100%, 1200px);
+  height: auto;
+}
+
+/* Contact and company details */
+.columns {
+  display: grid;
+  grid-template-columns: 6fr 3fr 3fr;
+  gap: 32px 24px;
+  padding-block: 64px 48px;
+  border-top: 1px solid var(--on-dark-line);
+  font-size: 15px;
+  color: var(--on-dark-muted);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.company {
+  color: #fff;
+  font-weight: 600;
+}
+
+.blurb {
+  max-width: 24em;
+}
+
+/* Doubled class: beats the global `.on-dark h3` colour. */
+.columns .heading {
+  font:
+    600 13px/16px var(--font-sans),
+    Arial,
+    sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-dark-faint);
+  margin-bottom: 18px;
+}
+
+.columns li + li {
+  margin-top: 10px;
+}
+
+.columns a:hover {
+  color: var(--color-mint);
+}
+
+.legal {
+  padding-block: 24px 40px;
+  border-top: 1px solid var(--on-dark-line);
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.48); /* 4.9:1 on ink */
+}
+
+.legal p + p {
+  margin-top: 8px;
+}
+
+.legal a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1079px) {
+  .copy,
+  .action {
+    grid-column: 1 / 13;
+    justify-self: start;
+  }
+
+  .action {
+    margin-top: 40px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .columns > :first-child {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 759px) {
+  .main {
+    padding-bottom: calc(var(--section) + 140px);
+  }
+
+  .skyline {
+    height: 170px;
+  }
+
+  .silhouette {
+    height: 140px;
+  }
+
+  .action,
+  .action :global(.btn) {
+    width: 100%;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .columns > :first-child {
+    grid-column: auto;
+  }
+}

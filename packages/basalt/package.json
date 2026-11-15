@@ -1,0 +1,42 @@
+{
+  "name": "@virkum/basalt",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "description": "Three.js basalt-column scenes used across Virkum's sites, with a React binding.",
+  "sideEffects": false,
+  "exports": {
+    "./math": "./src/engine/math.ts",
+    "./hex": "./src/engine/hex.ts",
+    "./constants": "./src/engine/constants.ts",
+    "./types": "./src/types.ts",
+    "./react": "./src/react/useBasaltScene.ts",
+    "./scenes/*": "./src/scenes/*.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@virkum/eslint-config": "workspace:*",
+    "@virkum/typescript-config": "workspace:*",
+    "@types/react": "19.3.0",
+    "@types/three": "0.187.0",
+    "@testing-library/react": "16.3.3",
+    "@vitejs/plugin-react": "6.3.0",
+    "eslint": "9.39.5",
+    "jsdom": "31.0.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "6.0.3",
+    "vitest": "5.1.0"
+  }
+}

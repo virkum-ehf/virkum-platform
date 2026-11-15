@@ -1,0 +1,128 @@
+/* Document pages (AI policy, privacy): contents on the left, sections on the right. */
+.doc {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  padding-bottom: var(--section);
+}
+
+.toc {
+  grid-column: 1 / 4;
+}
+
+.tocNav {
+  position: sticky;
+  top: calc(var(--header-h) + 40px);
+  border-top: 1px solid var(--color-mist);
+}
+
+.tocLink {
+  display: flex;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--color-mist);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-slate);
+  transition: color 0.15s;
+}
+
+.tocLink:hover,
+.tocLink[aria-current="true"] {
+  color: var(--color-navy);
+}
+
+.tocNumber {
+  font:
+    700 13px/22px var(--font-display),
+    Arial,
+    sans-serif;
+  color: var(--color-slate);
+  min-width: 20px;
+}
+
+.tocLink[aria-current="true"] .tocNumber {
+  color: var(--color-cobalt);
+}
+
+/* Gliding marker beside the current entry */
+.marker {
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 2px;
+  height: 0;
+  background: var(--color-cobalt);
+  transition:
+    transform 0.45s var(--ease-brand),
+    height 0.45s var(--ease-brand);
+}
+
+.body {
+  grid-column: 5 / 12;
+}
+
+.section + .section {
+  margin-top: 64px;
+  padding-top: 64px;
+  border-top: 1px solid var(--color-mist);
+}
+
+.number {
+  font:
+    700 15px/1 var(--font-display),
+    Arial,
+    sans-serif;
+  color: var(--color-cobalt);
+  margin-bottom: 18px;
+}
+
+.section h2 {
+  font-size: clamp(26px, 2.4vw, 34px);
+  line-height: 1.22;
+  margin-bottom: 20px;
+}
+
+.section p:not(.number) {
+  font-size: 18px;
+  line-height: 1.72;
+  color: #2c3340;
+}
+
+.section p:not(.number) + p {
+  margin-top: 18px;
+}
+
+.section a {
+  color: var(--color-cobalt);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 1079px) {
+  .toc {
+    display: none;
+  }
+
+  .body {
+    grid-column: 1 / 13;
+  }
+}
+
+@media (max-width: 759px) {
+  .section + .section {
+    margin-top: 48px;
+    padding-top: 48px;
+  }
+
+  .section p:not(.number) {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marker {
+    transition: none;
+  }
+}

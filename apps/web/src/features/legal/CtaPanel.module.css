@@ -1,0 +1,49 @@
+/* Call to action panel with the cut corner. */
+.body {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  align-items: end;
+  padding: clamp(36px, 5vw, 72px);
+  background: var(--color-frost);
+}
+
+.copy {
+  grid-column: 1 / 9;
+}
+
+.copy h2 {
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.12;
+  margin-bottom: 16px;
+}
+
+.copy p {
+  color: var(--color-slate);
+  font-size: 18px;
+  max-width: 34em;
+}
+
+.action {
+  grid-column: 9 / 13;
+  justify-self: end;
+}
+
+@media (max-width: 1079px) {
+  .copy,
+  .action {
+    grid-column: 1 / 13;
+    justify-self: start;
+  }
+
+  .action {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 759px) {
+  .action,
+  .action :global(.btn) {
+    width: 100%;
+  }
+}

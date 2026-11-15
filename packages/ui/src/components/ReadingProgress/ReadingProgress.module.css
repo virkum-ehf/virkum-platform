@@ -1,0 +1,18 @@
+/* A thin cobalt line along the bottom of the header that fills as the page is read. */
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: calc(var(--header-h) - 1px);
+  z-index: 51;
+  height: 2px;
+  pointer-events: none;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  background: var(--color-cobalt);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}

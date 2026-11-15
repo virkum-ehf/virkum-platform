@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits", "group:monorepos"],
+  "rangeStrategy": "pin",
+  "schedule": ["before 6am on monday"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "groupName": "minor and patch updates"
+    },
+    {
+      "matchPackageNames": ["three", "@types/three"],
+      "groupName": "three.js",
+      "dependencyDashboardApproval": true
+    }
+  ]
+}

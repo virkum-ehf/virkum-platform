@@ -1,0 +1,669 @@
+{
+  "site": {
+    "name": "Virkum",
+    "tagline": "Operating systems for Icelandic companies: dashboards, automation and a weekly rhythm."
+  },
+  "seo": {
+    "title": "Operating systems for Icelandic companies | Virkum",
+    "description": "Virkum builds operating systems into Icelandic companies: dashboards, automation and a weekly rhythm. You see the numbers, the company runs without you.",
+    "keywords": [
+      "operations consulting",
+      "technology",
+      "AI",
+      "automation",
+      "leadership training",
+      "courses",
+      "workforce development fund",
+      "Virkum",
+      "Iceland"
+    ],
+    "ogTitle": "Operating systems for Icelandic companies | Virkum",
+    "ogDescription": "Virkum builds operating systems into Icelandic companies: dashboards, automation and a weekly rhythm. You see the numbers, the company runs without you.",
+    "ogImageAlt": "Virkum, operating systems for Icelandic companies",
+    "twitterDescription": "Virkum builds operating systems into Icelandic companies: dashboards, automation and a weekly rhythm. You see the numbers, the company runs without you.",
+    "jsonLdDescription": "Virkum builds operating systems into Icelandic companies: dashboards, automation and a weekly rhythm. You see the numbers, the company runs without you."
+  },
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "selfAssessment": "Self-assessment",
+    "courses": "Courses",
+    "cases": "Case studies",
+    "ai": "AI",
+    "blog": "Blog",
+    "language": "Language",
+    "switchLanguage": "Switch language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "common": {
+    "footerLegal": "Virkum ehf. · Operating systems for Icelandic companies.",
+    "bookCall": "Book a call",
+    "bookCallArrow": "Book a call →",
+    "bookSession": "Book a session"
+  },
+  "cookieBanner": {
+    "ariaLabel": "Cookie and analytics notice",
+    "bodyBefore": "We use Google Analytics 4 only if you accept, to measure how the site is used. If you reject, no analytics cookies are loaded. See our ",
+    "privacyLink": "privacy policy",
+    "bodyAfter": " for details.",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found.",
+    "description": "The path you requested does not exist. Go back to the homepage.",
+    "homeLink": "Home →"
+  },
+  "hero": {
+    "badge": "Operating systems for Icelandic companies",
+    "h1Line1": "Your company should be a tool, ",
+    "h1Middle": "",
+    "h1Accent": "not an anchor.",
+    "heroDescription": "We build operating systems into your company: dashboards that show the numbers, automation that saves time, and a weekly rhythm that keeps everything moving.",
+    "checks": [
+      "Real-time figures",
+      "Automated workflows",
+      "Runs without you on site"
+    ],
+    "ctaAssessment": "Take the 2-minute assessment",
+    "ctaBook": "Book a 60-minute call"
+  },
+  "aiStat": {
+    "eyebrow": "AI in Icelandic operations",
+    "lineStrong": "50% of Icelandic companies use AI. ",
+    "lineMuted": "14% have a policy. ",
+    "lineAccent": "We bridge that gap.",
+    "policyLink": "Read Virkum's AI policy"
+  },
+  "marketContext": {
+    "sourceNote": "Sources: Almannarómur (2026), State of AI in Iceland 2026, chapter 2. Statistics Iceland (March 10, 2026), ICT survey 2025.",
+    "bar1": "Use AI technology",
+    "bar2": "Use it in defined workflows",
+    "bar3": "Have formal policy",
+    "gapNumber": "36",
+    "gapLabel": "percentage-point gap",
+    "gapBody": "Between companies that use the technology and those that govern it with clear policy.",
+    "ruleEyebrow": "KEY METRIC · BCG",
+    "ruleTitle": "The 10/20/70 rule",
+    "ruleIntro": "Boston Consulting Group analyzed where companies that achieve real results with AI invest their effort.",
+    "card10Title": "The technology itself",
+    "card10Body": "Models, software and tools. Usually not the hardest part.",
+    "card20Title": "Data and infrastructure",
+    "card20Body": "Access, quality and integrations. Prerequisites for creating value.",
+    "card70Title": "People and processes",
+    "card70Body": "Process redesign, enablement, leadership support and change management.",
+    "failureCallout": "When an AI project fails, it is rarely because of the technology. It is the 70% that was never completed.",
+    "stepTie": "The 70% part, people and processes, is exactly what we do in step 2.",
+    "quoteEyebrow": "VOICE FROM ICELANDIC OPERATIONS",
+    "quoteBody": "AI implementation is not just rolling out a new tool. It is fundamentally a leadership, data and change-management challenge.",
+    "quoteName": "Vilhelm Már Þorsteinsson",
+    "quoteRole": "Eimskip, CEO"
+  },
+  "statsBar": {
+    "stats": [
+      {
+        "number": "40+",
+        "label": "Fyrirtæki greind"
+      },
+      {
+        "number": "90%",
+        "label": "Halda áfram eftir skoðun"
+      },
+      {
+        "number": "30+",
+        "label": "Ára samanlögð reynsla"
+      }
+    ],
+    "clientsLabel": "Clients",
+    "clients": [
+      "Malbikstöðin",
+      "Lotus",
+      "Gæðaendurskoðun",
+      "Vegvísa",
+      "Fasteignafélagið"
+    ]
+  },
+  "problemSection": {
+    "eyebrow": "The problem",
+    "title": "Does this sound familiar?",
+    "closingPrompt": "If you nodded at any of these, the next step is a 60-minute conversation.",
+    "items": [
+      {
+        "num": "01",
+        "title": "I cannot take a vacation without everything stopping",
+        "desc": "The company depends on you. That's not an operation, that's a job."
+      },
+      {
+        "num": "02",
+        "title": "The same task gets repeated again and again",
+        "desc": "Nobody knows why. It's just how it's always done."
+      },
+      {
+        "num": "03",
+        "title": "I don't know which customers are profitable",
+        "desc": "No dashboards. No numbers. Just gut feeling."
+      },
+      {
+        "num": "04",
+        "title": "Big decisions based on instinct",
+        "desc": "No KPIs, no data, just Monday morning stress."
+      }
+    ]
+  },
+  "serviceCards": {
+    "eyebrow": "Services",
+    "title": "Simple. Three steps.",
+    "tagline": "The systems we build are yours. We sell systems, not time.",
+    "featuredPill": "Most clients",
+    "durationLabel": "Duration",
+    "bookCall": "Book a call →",
+    "items": [
+      {
+        "step": "Step 1",
+        "name": "Operational review",
+        "sub": "We find the bottlenecks",
+        "body": "We work with you for 2-4 weeks, assess people, processes and numbers, and deliver 3-5 actions that change performance.",
+        "duration": "2-4 weeks",
+        "featured": false
+      },
+      {
+        "step": "Step 2",
+        "name": "Growth",
+        "sub": "We implement the changes",
+        "body": "A monthly partnership where we implement systems, keep accountability high, and ensure results stick. Performance-based fees mean we share the risk.",
+        "duration": "90 days +",
+        "featured": true
+      },
+      {
+        "step": "Step 3",
+        "name": "Maintenance",
+        "sub": "We keep the systems running",
+        "body": "Once the foundation is in place, we handle maintenance, optimization and new initiatives as needed. You get a team behind you, not a one-off project.",
+        "duration": "Ongoing",
+        "featured": false
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "Companies in implementation.",
+    "featured": {
+      "name": "Vilhjálmur Matthíasson",
+      "company": "Malbikstöðin",
+      "quote": "The guys at Virkum get it. They showed up, listened, and understood our business in just a few days. Now we have visibility we never had before, and can make decisions based on numbers, not gut feeling."
+    },
+    "cards": [
+      {
+        "name": "Alexander Haraldsson",
+        "company": "Lotus Car Rental",
+        "quote": "They understand both operations and technology. That's rare. We now have processes that save us dozens of hours every week."
+      },
+      {
+        "name": "Kalman Stefánsson",
+        "company": "Gæðaendurskoðun",
+        "quote": "Professional and structured from day one. They took the time to understand our business before proposing solutions."
+      },
+      {
+        "name": "Kristrún Birgisdóttir",
+        "company": "Vegvísa",
+        "quote": "Virkum designed, developed, and implemented our web solution, and the collaboration has been professional and efficient from day one. We are extremely pleased with their service and recommend them wholeheartedly."
+      }
+    ]
+  },
+  "teamSection": {
+    "eyebrow": "The team",
+    "titleLine1": "Growing team.",
+    "titleLine2": "One roadmap.",
+    "members": [
+      {
+        "name": "Helgi Már Þórðarson",
+        "image": "/TeamPhotos/Helgi.jpg",
+        "role": "Operations, growth, change management",
+        "stats": [
+          "CCP 65→600 employees",
+          "aha.is co-founder"
+        ]
+      },
+      {
+        "name": "Þór Tómasarson",
+        "image": "/TeamPhotos/Tor.jpg",
+        "role": "AI, automation and operating systems",
+        "stats": [
+          "10+ years in applied AI",
+          "MSc Computational Engineering"
+        ]
+      },
+      {
+        "name": "Íris Líf Stefánsdóttir",
+        "image": "/TeamPhotos/Iris.jpg",
+        "role": "Financial management, operational oversight and governance",
+        "stats": [
+          "Finance",
+          "Accounting operations"
+        ]
+      },
+      {
+        "name": "Tiago Tiradentes Cuzzuol Nunes",
+        "image": "/TeamPhotos/Tiago.jpg",
+        "role": "Software development, user experience and UI/UX design",
+        "stats": [
+          "Software engineering",
+          "Frontend development"
+        ]
+      },
+      {
+        "name": "Muhammad Ahmad ul Haq",
+        "image": "/TeamPhotos/Muhammad.jpg",
+        "role": "Full Stack Software development",
+        "stats": [
+          "Software engineering",
+          "Frontend development"
+        ]
+      },
+      {
+        "name": "Syed Muhammad Azhar",
+        "image": "/TeamPhotos/Syed.jpg",
+        "role": "Full Stack Software development",
+        "stats": [
+          "Software engineering",
+          "Frontend development"
+        ]
+      }
+    ]
+  },
+  "ctaFooter": {
+    "titleLine1": "One conversation.",
+    "titleLine2": "No obligations.",
+    "body": "A 60-minute session where we assess your company and tell you directly whether we can help, or not.",
+    "bullet1": "✓ No obligation",
+    "bullet2": "✓ No follow-up unless you want it",
+    "bullet3": "✓ 100% confidentiality",
+    "bookCall": "Book a call →",
+    "companyName": "Virkum ehf.",
+    "courses": "Courses",
+    "blog": "Blog",
+    "companyBlurb": "Operations consulting and technology solutions for Icelandic companies that want to grow.",
+    "contactHeading": "Contact",
+    "location": "Reykjavík, Iceland",
+    "companyHeading": "Company",
+    "kennitala": "Kennitala: 480524-1280",
+    "privacy": "Privacy policy",
+    "sourcesBefore": "Sources: Almannarómur (2026). State of AI in Iceland 2026, ",
+    "sourcesChapter": "chapter 2",
+    "sourcesAfter": ". Statistics Iceland (March 10, 2026), ICT survey 2025. Boston Consulting Group (2026), Scaling AI requires new processes, not just new tools.",
+    "rights": "All rights reserved."
+  },
+  "blog": {
+    "metaTitle": "Blog on operations for Icelandic companies | Virkum",
+    "tabTitle": "Virkum's blog",
+    "metaDescription": "Articles on operating systems, weekly rhythm and AI for Icelandic companies. Dashboards, accountability and limits around client data.",
+    "eyebrow": "Blog",
+    "title": "An operation that runs without you",
+    "intro": "Short articles on dashboards, rhythm and AI. Written for owners and managers in Iceland.",
+    "read": "Read article",
+    "search": "Search articles",
+    "empty": "No articles match this search.",
+    "matchTitle": "In the title",
+    "matchText": "In the article",
+    "back": "← All articles",
+    "published": "Published",
+    "updated": "Updated",
+    "related": "More articles"
+  },
+  "caseHighlight": {
+    "eyebrow": "Case study",
+    "title": "Malbikstöðin",
+    "body": "Visibility over the numbers, subcontractors and the daily rhythm, without adding turnover.",
+    "link": "See the case study",
+    "metrics": [
+      { "value": "ISK 50m/year", "label": "Estimated earnings improvement" },
+      { "value": "+26%", "label": "Revenue per employee" },
+      { "value": "37", "label": "Employees" }
+    ]
+  },
+  "caseStudy": {
+    "intro": "The following is an excerpt from an analysis Virkum delivered for an Icelandic contractor with approximately ISK 1.6bn turnover and 37 FTEs.",
+    "estimated": "Estimated earnings improvement",
+    "result": "ISK 50m/year",
+    "summary": "Most likely scenario, without additional turnover or headcount growth. Virkum's analysis showed realistic earnings improvement of ISK 25–80m per year through formal subcontractor governance, clearer structure and targeted automation.",
+    "strengthsLabel": "Strengths",
+    "strengthsBody": "Profitable operations, strong equity position (50.1%), stable gross margin (66.6%) and improved efficiency per FTE. Revenue per FTE rose from ISK 33.7m to ISK 42.5m, a 26% increase over two years.",
+    "risksLabel": "Risk factors and opportunities",
+    "risksBody": "Growing reliance on subcontractors (purchased services up 54% year-on-year), unclear processes for managing purchased services, and increasing need for formal management routines alongside a planned corporate split.",
+    "scenariosTitle": "Three scenarios for the next 12 months",
+    "scenariosIntro": "Same turnover, different earnings depending on how well improvements land. Assumptions are based on how much time converts into improved earnings.",
+    "scenarioSuffix": "scenario",
+    "scenarioMetricLabel": "Earnings ratio",
+    "recommendationsTitle": "Virkum priority actions",
+    "closingLabel": "Closing note from Virkum",
+    "closingBody": "The company is well run and profitable. The analysis is therefore not about correcting poor management, but about opportunities to lock in current performance and prepare the company for the next operational phase, without increasing turnover or headcount.",
+    "metrics": [
+      { "label": "Operating revenue", "value": "1,592", "unit": "m ISK", "change": "↑ 18.4%" },
+      { "label": "Annual earnings", "value": "204", "unit": "m ISK", "change": "↑ 21.9%" },
+      { "label": "Earnings ratio", "value": "12.8%", "unit": "", "change": "↑ 0.4 pp" },
+      { "label": "Purchased services", "value": "257", "unit": "m ISK", "change": "↑ 54.0%" }
+    ],
+    "scenarios": [
+      { "name": "Conservative", "from": "12.8% → 14.3%", "amount": "~ISK 25m/year" },
+      { "name": "Most likely", "from": "12.8% → 15.8%", "amount": "~ISK 50m/year", "highlight": true },
+      { "name": "Optimistic", "from": "12.8% → 17.8%", "amount": "~ISK 80m/year" }
+    ],
+    "recommendations": [
+      {
+        "tag": "Most urgent · 30 days",
+        "title": "Formal process for subcontractor governance",
+        "body": "Purchased services grew 54% in one year and now represent 16% of operating revenue. Without a formal process for selection, pricing and follow-up, margin erodes on every project."
+      },
+      {
+        "tag": "30–90 days",
+        "title": "Digital time tracking and standardised quoting",
+        "body": "A mobile time-tracking solution and standard pricing based on real data saves ~10 hours/week combined for project managers and sales, and improves quote accuracy."
+      },
+      {
+        "tag": "30–90 days",
+        "title": "Real-time management dashboard",
+        "body": "Automated dashboard for revenue, project profit, receivables status and staff utilisation. Replaces manual monthly reports and improves shareholder decision-making."
+      },
+      {
+        "tag": "After 90 days",
+        "title": "Structured customer database (CRM)",
+        "body": "Existing customers are the most valuable sales channel, retention and renewals cost a fraction of new sales. Without systematic follow-up, that opportunity is left unused."
+      }
+    ]
+  },
+  "grantsSection": {
+    "eyebrow": "Grants",
+    "title": "Reduce cost by up to 90%",
+    "body": "Workforce development funds can reimburse up to 90% of consulting and training costs. We handle the applications.",
+    "link": "View course descriptions",
+    "metrics": [
+      {
+        "number": "90%",
+        "label": "reimbursed"
+      },
+      {
+        "number": "390k",
+        "label": "max per employee"
+      },
+      {
+        "number": "4M",
+        "label": "max per company"
+      }
+    ]
+  },
+  "sjalfsmatQuiz": {
+    "progress": "Question {current} of {total}",
+    "back": "← Back",
+    "next": "Next",
+    "seeResult": "See result",
+    "bookCall": "Book a free 60-minute call",
+    "retake": "Retake",
+    "results": {
+      "low": {
+        "eyebrow": "{score} OF 10 · LOW PAIN",
+        "title": "Your operations are on a strong path.",
+        "body": "You already have many fundamentals in place: dashboards, clear ownership, and automation in daily workflows. Virkum may not be urgent right now."
+      },
+      "mid": {
+        "eyebrow": "{score} OF 10 · CLEAR OPPORTUNITY",
+        "title": "The foundation is solid, but there are gaps.",
+        "body": "Operations work, but several areas are weaker than they should be. A focused operational review will identify what to improve over the next 6-12 months."
+      },
+      "high": {
+        "eyebrow": "{score} OF 10 · TIME TO ACT",
+        "title": "You have a lot to gain from action.",
+        "body": "Based on your answers, operations depend too heavily on you, manual work consumes time, and decision data is not available when needed. This is exactly what Virkum helps fix."
+      }
+    },
+    "questions": [
+      {
+        "question": "If you took a 2-week vacation today, would operations continue normally?",
+        "options": [
+          {
+            "label": "Yes, everything runs without me",
+            "score": 0
+          },
+          {
+            "label": "Mostly, but some issues would wait",
+            "score": 1
+          },
+          {
+            "label": "No, many things would stop",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "How often are you reacting instead of planning?",
+        "options": [
+          {
+            "label": "Rarely, I focus on strategy",
+            "score": 0
+          },
+          {
+            "label": "Weekly",
+            "score": 1
+          },
+          {
+            "label": "Daily, I am constantly firefighting",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "Do you have a dashboard showing operational status in real time?",
+        "options": [
+          {
+            "label": "Yes, key metrics update automatically",
+            "score": 0
+          },
+          {
+            "label": "Partly, I compile this manually",
+            "score": 1
+          },
+          {
+            "label": "No, mostly based on gut feeling",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "Do you know which employees and projects generate the most profit?",
+        "options": [
+          {
+            "label": "Yes, very clearly",
+            "score": 0
+          },
+          {
+            "label": "Unclear, I should analyze this better",
+            "score": 1
+          },
+          {
+            "label": "No, we do not measure this",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "question": "How many manual workflows in daily operations should be automated?",
+        "options": [
+          {
+            "label": "Few, most is automated already",
+            "score": 0
+          },
+          {
+            "label": "Some, recurring friction points",
+            "score": 1
+          },
+          {
+            "label": "Many, they consume too much time",
+            "score": 2
+          }
+        ]
+      }
+    ]
+  },
+  "sjalfsmatPage": {
+    "metaTitle": "Operations self-assessment for companies | Virkum",
+    "metaDescription": "A two-minute self-assessment for Icelandic companies. Five questions on numbers, rhythm and accountability, and whether Virkum is a fit.",
+    "eyebrow": "Self-assessment",
+    "titleBefore": "How independent is ",
+    "titleAccent": "your operation?",
+    "intro": "Five questions. Two minutes. Get a quick view of where your operation stands, and whether Virkum can help."
+  },
+  "daemiPage": {
+    "metaTitle": "Case study: Icelandic contractor, 37 people | Virkum",
+    "metaDescription": "Excerpt from Virkum’s analysis of an Icelandic contractor with ISK 1.6bn turnover and 37 people: bottlenecks, dashboards and what has to change.",
+    "eyebrow": "Case study",
+    "titleBefore": "What does an operational review look like ",
+    "titleAccent": "in the real world?"
+  },
+  "gervigreindPage": {
+    "metaTitle": "AI policy and daily use in companies | Virkum",
+    "metaDescription": "How Virkum uses AI in daily operations, the limits we keep around client data, and how Icelandic companies can write a policy of their own.",
+    "eyebrow": "Virkum policy",
+    "titleBefore": "AI at ",
+    "titleAccent": "Virkum.",
+    "intro": "Virkum uses AI deliberately in daily work, as a tool, not a magic solution. This is our stance on how we use it and how we support clients.",
+    "ctaTitle": "Want to discuss AI in your operations?",
+    "ctaBody": "Book a free 60-minute call where we review where AI can deliver most value for your company, and where it should not be used.",
+    "sections": [
+      {
+        "title": "Ground rules",
+        "body": "AI speeds work; it does not replace judgment. Everything we deliver to clients goes through human review. Responsibility always sits with the person who signs off."
+      },
+      {
+        "title": "Client data",
+        "body": "We never send confidential client data into public AI systems without consent. For sensitive work we use paid tiers with enterprise terms that prohibit training on your data. Personally identifiable information is scrubbed before it enters any system."
+      },
+      {
+        "title": "What we use it for",
+        "body": "We use AI in preparation, analysis, drafting and research. That makes work faster and deeper, you get better output in less time, not cheaper work at lower quality."
+      },
+      {
+        "title": "What we do not do",
+        "body": "We do not forward unchecked AI output directly to clients. We do not let AI make decisions about people, hiring, termination or performance reviews. We do not sell “AI” as a product on its own."
+      },
+      {
+        "title": "Our clients",
+        "body": "A recent Statistics Iceland survey shows that 50% of Icelandic firms use AI but only 14% have a formal usage policy. That gap, AI in daily use without clear guardrails, is one of today’s biggest operational risks.\n\nWe help clients bridge it: define policy, scope use cases, and embed it in how the company operates, not as a one-off project, but as part of normal maturity."
+      }
+    ]
+  },
+  "personuverndPage": {
+    "metaTitle": "Privacy, cookies and analytics | Virkum",
+    "metaDescription": "What Virkum stores from contact and booking, when Google Analytics loads, and how cookies and your language choice stay in the browser.",
+    "title": "Privacy policy",
+    "intro": "Virkum ehf. emphasizes protecting personal data for visitors of virkum.is and users of our services. This policy describes what data we collect, why we collect it and how you can exercise your rights.",
+    "h2collect": "Data we collect",
+    "pcollect": "We collect information you provide directly, for example name, email, phone number and company name, when you contact us or book through our scheduling link. When you book via Calendly, information you submit is processed by Calendly as an independent service under Calendly's privacy policy and terms.",
+    "h2use": "How we use data",
+    "puse": "Data is used only to respond to inquiries, deliver requested services and send requested materials. We never sell data to third parties.",
+    "h2cookies": "Cookies, analytics and browser storage",
+    "pcookies": "We use Google Analytics 4 (Google) to understand how virkum.is is used. The GA4 script and related cookies are loaded only if you choose Accept in our cookie banner; if you choose Reject or do not accept, they are not loaded.",
+    "pcookiesDetail": "GA4 processes technical and usage data (such as page views, approximate location derived from IP, device and browser information and identifiers stored in cookies) to produce aggregated statistics. We do not use this GA4 integration for personalised advertising. Your analytics consent choice (accept or reject) and your selected site language are stored in your browser's local storage so we do not need to ask again on every visit. Ordinary outbound links may take you to third-party sites (for example Calendly when booking); those services apply their own privacy notices once you leave virkum.is.",
+    "h2rights": "Your rights",
+    "prightsBefore": "You have the right to request a copy of your data and request correction or deletion. Send requests to ",
+    "prightsAfter": ".",
+    "h2changes": "Changes",
+    "pchanges": "This policy may be updated."
+  },
+  "namskeidPage": {
+    "metaTitle": "Operations courses for Icelandic companies | Virkum",
+    "metaDescription": "Operations and leadership courses for Icelandic owners and managers. Up to 90% of eligible cost can be reimbursed through workforce development funds.",
+    "eyebrow": "Course catalog",
+    "titleLine1": "Training and enablement",
+    "titleAccent": "for companies.",
+    "intro": "All courses are designed for owners and managers who want stronger operations. Eligible training costs can be reimbursed through workforce development funds.",
+    "audienceLabel": "Audience",
+    "contentLabel": "Content",
+    "didYouKnow": "Did you know?",
+    "automationTitle": "Automation and training, two parts of one programme.",
+    "automationBody": "When Virkum implements systems, dashboards or automation, the project has two parts: implementation and training. Implementation, setup, integration and advisory, is the company’s investment. Training, teaching staff the new systems, is often eligible for reimbursement.",
+    "implTitle": "Implementation",
+    "implBody": "Systems setup, automation, dashboards and data flows. Paid by the company.",
+    "trainTitle": "Training",
+    "trainBody": "Hands-on training on new systems and workflows. Up to 90% reimbursed.",
+    "automationFootnote": "That means total project cost can fall by roughly 25–35% when the training portion is reimbursed.",
+    "reimbTitle": "Up to 90% reimbursed.",
+    "reimbBody": "Workforce funds reimburse corporate training costs. We help identify the right fund and support the application.",
+    "metrics": [
+      {
+        "number": "90%",
+        "label": "reimbursed"
+      },
+      {
+        "number": "390k",
+        "label": "per employee"
+      },
+      {
+        "number": "4M",
+        "label": "per company"
+      }
+    ],
+    "howTitle": "How does reimbursement work?",
+    "howBody": "Companies paying into training funds can apply for reimbursement after delivery by submitting invoice, payment receipt and participant list. We help clients complete the process at no extra cost.",
+    "moreTitle": "Want to learn more?",
+    "moreBody": "Book a 60-minute walkthrough to identify which courses fit your company and estimate reimbursement.",
+    "courses": [
+      {
+        "title": "Operational analysis and action plan",
+        "duration": "2–4 weeks",
+        "price": "ISK 150,000",
+        "description": "Structured analysis of your company’s operations, people, processes, systems and numbers. The outcome is a clear action plan with 3–5 priority initiatives with the greatest impact on performance over the next 6–12 months. Participants receive both the analysis and training in using the data for decisions.",
+        "markhopur": "Owners, managing directors and leadership teams in companies with 10–100 employees.",
+        "innihald": "Financial analysis, process mapping, team assessment, interviews with key people, action plan and presentation."
+      },
+      {
+        "title": "Goal setting and dashboards",
+        "duration": "2-day workshop + follow-up",
+        "price": "ISK 250,000",
+        "description": "A workshop where the leadership team sets measurable 90-day goals, defines key performance indicators (KPIs) and builds a dashboard that shows operational status in real time. Participants learn to steer with numbers instead of gut feeling.",
+        "markhopur": "Leadership teams (3–8 people). Owners and everyone accountable for operational results.",
+        "innihald": "90-day goal setting, KPI selection and definition, dashboard setup, weekly follow-up for 4 weeks."
+      },
+      {
+        "title": "Meeting rhythm and accountability",
+        "duration": "1 day + 8 weeks of coaching",
+        "price": "ISK 290,000",
+        "description": "Training to establish a working weekly meeting rhythm that keeps the team accountable, resolves issues quickly and keeps everyone aligned. Includes one workshop day and 8 weeks of coaching where we join your meetings and teach the right cadence.",
+        "markhopur": "Leadership teams that spend too much time in low-value meetings, or lack a consistent meeting structure.",
+        "innihald": "Meeting agenda, issue identification and problem solving, ownership handoffs, follow-up system, and leadership training in meeting facilitation."
+      },
+      {
+        "title": "Strategy and future vision",
+        "duration": "2-day workshop",
+        "price": "ISK 350,000",
+        "description": "A two-day workshop where the leadership team defines core values, strategic focus, a 3-year picture and a 1-year plan. The result is a single document everyone in the company can read and understand, strategy on one page. Participants learn a methodology you can repeat every quarter.",
+        "markhopur": "Owners and leadership teams who want to align people, processes and goals under one clear strategy.",
+        "innihald": "Core values, strategic focus, 10-year target, 3-year picture, 1-year plan, 90-day priorities, and future vision on one page."
+      },
+      {
+        "title": "AI and automation in daily operations",
+        "duration": "1-day workshop",
+        "price": "ISK 190,000",
+        "description": "A practical workshop where leaders and staff learn to use AI and automation to save time on everyday tasks. No deep technical background required, we start from real tasks in your operations and show how technology solves them.",
+        "markhopur": "Everyone in the company, from owner to frontline staff. Especially teams spending time on manual, repetitive work.",
+        "innihald": "AI tools for office work, automated reporting, communication automation, process analysis and automation opportunities."
+      },
+      {
+        "title": "Team coaching and accountability systems",
+        "duration": "1 day + quarterly follow-up",
+        "price": "ISK 290,000",
+        "description": "Training to build a clear accountability system where every seat has an owner, every role is defined and the right people are in the right seats. Participants learn to assess the team systematically and make difficult people decisions on a professional basis.",
+        "markhopur": "Owners and leaders who feel something is off in the team but cannot pinpoint what.",
+        "innihald": "Accountability chart, role definitions, team assessment, hiring framework, and quarterly reviews."
+      },
+      {
+        "title": "Training on new systems and automation",
+        "duration": "As needed (2–8 modules)",
+        "price": "From ISK 95,000 per module",
+        "description": "When a new system or automation is rolled out, people need practical training. This programme is tailored to each company based on the tools and workflows implemented, dashboards, project tools, automated communications or data flows. Training on-site or remote.",
+        "markhopur": "Staff and leaders who received new implementations and need hands-on training, not just a demo, until the system is part of daily work.",
+        "innihald": "System walkthroughs, exercises on real tasks, troubleshooting, automation workflow documentation, and follow-up modules to ensure adoption."
+      }
+    ]
+  }
+}

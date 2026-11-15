@@ -1,0 +1,29 @@
+.page {
+  min-height: calc(100vh - var(--header-h));
+  min-height: calc(100svh - var(--header-h));
+  display: grid;
+  place-items: center;
+  padding-block: 64px;
+  text-align: center;
+  background: var(--color-frost);
+}
+
+.row {
+  width: 180px;
+  height: auto;
+  margin: 0 auto 40px;
+}
+
+.code {
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.description {
+  color: var(--color-slate);
+  font-size: 18px;
+  margin-bottom: 36px;
+}

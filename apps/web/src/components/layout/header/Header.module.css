@@ -1,0 +1,262 @@
+/* Sticky white header; transparent with white text while over a dark hero. */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.scrolled {
+  border-bottom-color: var(--color-mist);
+}
+
+.inner {
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  flex: none;
+  display: block;
+  margin-left: -2px;
+}
+
+.brand img {
+  height: 40px;
+  width: auto;
+}
+
+.logoDark {
+  display: none !important;
+}
+
+/* Desktop navigation */
+.nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navItem {
+  position: relative;
+  padding: 10px 14px;
+  font:
+    500 15px/1 var(--font-sans),
+    Arial,
+    sans-serif;
+  color: var(--color-slate);
+  transition: color 0.15s;
+}
+
+.navItem:hover,
+.navItem[aria-current="page"] {
+  color: var(--color-navy);
+}
+
+.navItem[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -19px;
+  height: 2px;
+  background: var(--color-cobalt);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 20px;
+  border-left: 1px solid var(--color-mist);
+}
+
+/* IS | EN */
+.lang {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--color-mist);
+  border-radius: 12px;
+}
+
+.langOption {
+  padding: 7px 10px;
+  border-radius: 9px;
+  font:
+    600 12px/1 var(--font-sans),
+    Arial,
+    sans-serif;
+  letter-spacing: 0.06em;
+  color: var(--color-slate);
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+
+.langOption:hover {
+  color: var(--color-navy);
+}
+
+.langOption[aria-pressed="true"] {
+  background: var(--color-frost);
+  color: var(--color-navy);
+  cursor: default;
+}
+
+.menuButton {
+  display: none;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+}
+
+.menuButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Over the dark hero */
+.overDark {
+  background: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.overDark .logoLight {
+  display: none !important;
+}
+
+.overDark .logoDark {
+  display: block !important;
+}
+
+.overDark .navItem {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.overDark .navItem:hover,
+.overDark .navItem[aria-current="page"] {
+  color: #fff;
+}
+
+.overDark .navItem[aria-current="page"]::after {
+  background: var(--color-mint);
+}
+
+.overDark .actions {
+  border-left-color: rgba(255, 255, 255, 0.16);
+}
+
+.overDark .lang {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.overDark .langOption {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.overDark .langOption:hover {
+  color: #fff;
+}
+
+.overDark .langOption[aria-pressed="true"] {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.overDark .cta {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.overDark .cta:hover {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.overDark .menuButton {
+  color: #fff;
+}
+
+/* Mobile menu: a full-height sheet under the header */
+.sheet {
+  position: fixed;
+  inset: var(--header-h) 0 0 0;
+  z-index: 49;
+  display: none;
+  flex-direction: column;
+  padding: 8px var(--pad) 32px;
+  background: #fff;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.sheetOpen {
+  display: flex;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-mist);
+  font:
+    700 26px/1.2 var(--font-display),
+    Arial,
+    sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--color-navy);
+}
+
+.menuItem[aria-current="page"] {
+  color: var(--color-cobalt);
+}
+
+.menuItem span {
+  font:
+    500 15px var(--font-sans),
+    Arial,
+    sans-serif;
+  color: var(--color-slate);
+  letter-spacing: 0;
+}
+
+.menuFoot {
+  margin-top: auto;
+  padding-top: 32px;
+  display: grid;
+  gap: 16px;
+}
+
+.menuFoot .lang {
+  justify-self: start;
+}
+
+@media (max-width: 1079px) {
+  .nav,
+  .actions {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 759px) {
+  .brand img {
+    height: 38px;
+  }
+}
