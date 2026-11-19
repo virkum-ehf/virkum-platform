@@ -38,11 +38,15 @@ export function StepsStory({ items, labels, head }: StepsStoryProps) {
   const [active, setActive] = useState(0);
   const count = items.length;
 
-  const { status, controllerRef } = useBasaltScene<StepsController>(hostRef, async (host, signal) => {
-    const { mountStepsScene } = await import("@virkum/basalt/scenes/steps");
-    if (signal.aborted) return null;
-    return mountStepsScene(host);
-  });
+  const { status, controllerRef } = useBasaltScene<StepsController>(
+    hostRef,
+    async (host, signal) => {
+      const { mountStepsScene } = await import("@virkum/basalt/scenes/steps");
+      if (signal.aborted) return null;
+      return mountStepsScene(host);
+    },
+    { lazyMargin: "600px" },
+  );
 
   // The 3D panel follows the active step.
   useEffect(() => {

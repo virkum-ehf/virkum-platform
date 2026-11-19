@@ -25,11 +25,15 @@ const percentOf = (text: string) => text.match(/\d+\s?%/)?.[0] ?? "";
 export function AiStat({ eyebrow, lineStrong, lineMuted, lineAccent, sourceNote }: AiStatProps) {
   const hostRef = useRef<HTMLDivElement>(null);
   const [hot, setHot] = useState<AiGroup | null>(null);
-  const { status, controllerRef } = useBasaltScene<AiGridController>(hostRef, async (host, signal) => {
-    const { mountAiGridScene } = await import("@virkum/basalt/scenes/aiGrid");
-    if (signal.aborted) return null;
-    return mountAiGridScene(host);
-  });
+  const { status, controllerRef } = useBasaltScene<AiGridController>(
+    hostRef,
+    async (host, signal) => {
+      const { mountAiGridScene } = await import("@virkum/basalt/scenes/aiGrid");
+      if (signal.aborted) return null;
+      return mountAiGridScene(host);
+    },
+    { lazyMargin: "600px" },
+  );
 
   const point = (group: AiGroup | null) => {
     setHot(group);

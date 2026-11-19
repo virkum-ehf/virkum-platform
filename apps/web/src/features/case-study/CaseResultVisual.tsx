@@ -24,11 +24,15 @@ function RisingColumns() {
 /** The result panel's 3D field: columns rising to the mint one (cursor lifts, click ripples). */
 export function CaseResultVisual() {
   const hostRef = useRef<HTMLDivElement>(null);
-  const { status } = useBasaltScene(hostRef, async (host, signal) => {
-    const { mountCaseStudyScene } = await import("@virkum/basalt/scenes/caseStudy");
-    if (signal.aborted) return null;
-    return mountCaseStudyScene(host);
-  });
+  const { status } = useBasaltScene(
+    hostRef,
+    async (host, signal) => {
+      const { mountCaseStudyScene } = await import("@virkum/basalt/scenes/caseStudy");
+      if (signal.aborted) return null;
+      return mountCaseStudyScene(host);
+    },
+    { lazyMargin: "600px" },
+  );
 
   if (status === "failed") {
     return (
