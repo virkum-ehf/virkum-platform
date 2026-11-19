@@ -30,6 +30,7 @@ export function mountHeroScene(
   const order = ziggurat(cells, centre);
   order[mint] = 4.1;
 
+  let shown = -1;
   const field = new BasaltField(host, {
     cells,
     mintIndex: mint,
@@ -41,6 +42,7 @@ export function mountHeroScene(
     look2: compact ? [0.7, 0.3, -1.4] : [1.9, 0.35, -1.5],
     fogNear: 16,
     fogFar: 35,
+    alpha: false,
     lift: compact ? 0 : 0.95,
     liftRadius: 1.15,
     liftColor: "#6F8DFF",
@@ -50,6 +52,8 @@ export function mountHeroScene(
     beforeUpdate: (_time, f) => {
       const rect = section.getBoundingClientRect();
       const progress = isCalm() ? 0 : clamp01(-rect.top / (rect.height * 0.7));
+      if (Math.abs(progress - shown) < 0.0008) return;
+      shown = progress;
       const k = ease.inOutCubic(progress);
       f.setGoalsNow((_cell, i) => {
         const from = chaos[i] ?? 0;

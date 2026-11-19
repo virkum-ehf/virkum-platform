@@ -7,7 +7,8 @@
 export type LoopItem = {
   /** Only visible items are updated. */
   visible: boolean;
-  update(time: number, delta: number): void;
+  /** Returns true while the item still needs another frame. */
+  update(time: number, delta: number): boolean;
 };
 
 const isBrowser = typeof window !== "undefined";
@@ -34,8 +35,7 @@ function frame() {
   let busy = false;
   for (const item of items) {
     if (!item.visible) continue;
-    item.update(time, delta);
-    busy = true;
+    if (item.update(time, delta)) busy = true;
   }
   if (!calm && busy && !document.hidden) frameId = requestAnimationFrame(frame);
 }

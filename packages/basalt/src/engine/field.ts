@@ -105,6 +105,10 @@ export type FieldOptions = {
   introDelay?: ((cell: Cell, index: number, random: () => number) => number) | null;
   seed?: number;
   maxDpr?: number;
+  /** Multisample antialiasing. Off by default: the columns are flat-shaded, so the extra samples barely show. */
+  antialias?: boolean;
+  /** Transparent canvas. Off clears to the fog colour and skips a full-screen blend. */
+  alpha?: boolean;
 
   // Highlighting
   emphColor?: string;
@@ -320,13 +324,18 @@ export class BasaltField {
     if (!webglAvailable()) return; // `ok` stays false and the caller shows its fallback.
     let renderer: THREE.WebGLRenderer;
     try {
-      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+      const alpha = o.alpha !== false;
+      renderer = new THREE.WebGLRenderer({
+        antialias: o.antialias === true,
+        alpha,
+        powerPreference: "high-performance",
+      });
+      renderer.setClearColor(alpha ? 0x000000 : (o.fog ?? "#1B2A6B"), alpha ? 0 : 1);
     } catch {
       return;
     }
     const dprCap = window.innerWidth < 760 ? Math.min(1.5, o.maxDpr) : o.maxDpr;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, dprCap));
-    renderer.setClearColor(0x000000, 0);
     renderer.domElement.setAttribute("aria-hidden", "true");
     host.appendChild(renderer.domElement);
     this.renderer = renderer;
@@ -386,11 +395,9 @@ export class BasaltField {
     mintGeometry.setAttribute("color", shade(0.74, 0.5));
 
     const others = this.n - (this.mint === null ? 0 : 1);
-    const material = new THREE.MeshStandardMaterial({
+    const material = new THREE.MeshLambertMaterial({
       vertexColors: true,
       flatShading: true,
-      roughness: 0.82,
-      metalness: 0.04,
     });
     const mesh = new THREE.InstancedMesh(geometry, material, others);
     mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
@@ -401,13 +408,12 @@ export class BasaltField {
 
     if (this.mint !== null) {
       const cell = cellAt(this.cells, this.mint);
-      const mintMaterial = new THREE.MeshStandardMaterial({
+      const mintMaterial = new THREE.MeshLambertMaterial({
         vertexColors: true,
         flatShading: true,
         color: new THREE.Color(o.mintColor),
         emissive: new THREE.Color(o.mintColor),
         emissiveIntensity: 0.1,
-        roughness: 0.7,
       });
       this.mintMesh = new THREE.Mesh(mintGeometry, mintMaterial);
       this.mintMesh.position.set(cell.x, 0, cell.z);
@@ -438,10 +444,15 @@ export class BasaltField {
     const onLeave = () => {
       this.pointer.inside = false;
     };
+    const onScroll = () => {
+      if (this.visible) kick();
+    };
     window.addEventListener("pointermove", onMove, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("pointerleave", onLeave);
     this.cleanups.push(() => {
       window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("scroll", onScroll);
       document.removeEventListener("pointerleave", onLeave);
     });
 
@@ -555,10 +566,35 @@ export class BasaltField {
     this.camera.updateProjectionMatrix();
   }
 
-  update(time: number, delta: number) {
+  /**
+   * True while something on this field is still moving. A resting field drops out of the
+   * shared frame loop; scrolling, pointing, or a new goal calls `kick()` to wake it.
+   */
+  private awake(time: number): boolean {
+    if (this.pointer.inside) return true;
+    if (this.ripples.length > 0) return true;
+    if (this.scan || this.pulse > 0) return true;
+    if (Math.abs(this.emphK - (this.emphOn ? 1 : 0)) > 0.015) return true;
+    if (Math.abs(this.scanK - (this.scan ? 1 : 0)) > 0.015) return true;
+    if (Math.abs(this.pulseK - (this.pulse > 0 ? 1 : 0)) > 0.015) return true;
+    if (Math.hypot(this.camOffset.x, this.camOffset.y) > 0.004) return true;
+    const intro0 = this.introAt;
+    if (intro0 !== null) {
+      for (const column of this.columns) {
+        if (time < intro0 + column.delay + column.introDuration) return true;
+      }
+    }
+    for (const column of this.columns) {
+      if (column.lift > 0.004) return true;
+      if (time < column.t0 + column.dur) return true;
+    }
+    return false;
+  }
+
+  update(time: number, delta: number): boolean {
     const renderer = this.renderer;
     const mesh = this.mesh;
-    if (!renderer || !mesh) return;
+    if (!renderer || !mesh) return false;
     const o = this.o;
     const calm = isCalm();
     const T = calm ? 1e4 : time;
@@ -670,6 +706,7 @@ export class BasaltField {
         intro0 === null ? 0 : o.glow * clamp01((T - intro0 - 1.6) / 1.2) * clamp01((mintH - 0.4) / 1.5);
     }
     renderer.render(this.scene, this.camera);
+    return this.awake(T);
   }
 
   /** Stops rendering and frees every GPU resource and listener. */
