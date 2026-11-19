@@ -7,42 +7,39 @@ import styles from "./Problem.module.css";
 
 export type ProblemItem = { num: string; title: string; desc: string };
 
-/** Highlights the item closest to the middle of the screen (not with reduced motion). */
+/** Highlights the item in the middle of the screen (not with reduced motion). */
 export function ProblemList({ items }: { items: ProblemItem[] }) {
   const itemRefs = useRef<Array<HTMLLIElement | null>>([]);
   const [focus, setFocus] = useState<number | null>(null);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let frame = 0;
-    const sync = () => {
-      frame = 0;
-      const middle = window.innerHeight * 0.5;
-      let best = 0;
-      let bestDistance = Infinity;
-      itemRefs.current.forEach((item, i) => {
-        if (!item) return;
-        const rect = item.getBoundingClientRect();
-        const distance = Math.abs((rect.top + rect.bottom) / 2 - middle);
-        if (distance < bestDistance) {
-          bestDistance = distance;
-          best = i;
-        }
-      });
-      setFocus(best);
-    };
-    const schedule = () => {
-      if (!frame) frame = requestAnimationFrame(sync);
-    };
-    sync();
-    window.addEventListener("scroll", schedule, { passive: true });
-    window.addEventListener("resize", schedule);
-    return () => {
-      window.removeEventListener("scroll", schedule);
-      window.removeEventListener("resize", schedule);
-      cancelAnimationFrame(frame);
-    };
-  }, []);
+    const nodes = itemRefs.current.filter((item): item is HTMLLIElement => item !== null);
+    if (nodes.length === 0) return;
+
+    // A band around the middle of the screen. The row filling it most is the one in focus.
+    // IntersectionObserver reports that without reading layout on every scroll frame.
+    const ratios = new Map<Element, number>();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) ratios.set(entry.target, entry.intersectionRatio);
+        let best = 0;
+        let bestRatio = 0;
+        nodes.forEach((node, index) => {
+          const ratio = ratios.get(node) ?? 0;
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            best = index;
+          }
+        });
+        if (bestRatio === 0) return;
+        setFocus((current) => (current === best ? current : best));
+      },
+      { rootMargin: "-42% 0px -42% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] },
+    );
+    nodes.forEach((node) => observer.observe(node));
+    return () => observer.disconnect();
+  }, [items.length]);
 
   return (
     <ol className={cn(focus !== null && styles.tracking)}>
