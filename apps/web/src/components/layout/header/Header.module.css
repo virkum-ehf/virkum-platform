@@ -1,4 +1,6 @@
-/* Sticky white header; transparent with white text while over a dark hero. */
+/* Sticky white header; transparent with white text while over a dark hero.
+   After the first scroll the bar turns solid navy, covering the hero without
+   resampling it. It becomes white again once the hero has scrolled away. */
 .header {
   position: sticky;
   top: 0;
@@ -89,6 +91,7 @@
 .langOption {
   padding: 7px 10px;
   border-radius: 9px;
+  cursor: pointer;
   font:
     600 12px/1 var(--font-sans),
     Arial,
@@ -107,7 +110,6 @@
 .langOption[aria-pressed="true"] {
   background: var(--color-frost);
   color: var(--color-navy);
-  cursor: default;
 }
 
 .menuButton {
@@ -129,6 +131,12 @@
 .overDark {
   background: transparent;
   border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Still over the hero, but the page has moved: a solid veil, same navy as the hero. */
+.overDark.scrolled {
+  background: var(--color-navy);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
 }
 
 .overDark .logoLight {

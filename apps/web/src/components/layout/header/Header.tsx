@@ -56,7 +56,7 @@ export function Header() {
 
   const close = useCallback(() => setOpen(false), []);
 
-  // Border once the page scrolls; transparent while over a dark hero.
+  // Cover the hero with a solid bar once the page scrolls; turn white after the hero leaves.
   useEffect(() => {
     const hero = document.querySelector<HTMLElement>(DARK_HERO_SELECTOR);
     let frame = 0;
