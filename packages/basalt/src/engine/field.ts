@@ -98,6 +98,8 @@ export type FieldOptions = {
   // Motion
   idleAmp?: number;
   idleSpeed?: number;
+  /** Keep the idle sway running while the field is on screen, with the pointer elsewhere. */
+  sustainIdle?: boolean;
   autoIntro?: boolean;
   introSpread?: number;
   introDur?: number;
@@ -569,9 +571,11 @@ export class BasaltField {
   /**
    * True while something on this field is still moving. A resting field drops out of the
    * shared frame loop; scrolling, pointing, or a new goal calls `kick()` to wake it.
+   * `sustainIdle` keeps the idle sway in that loop while the field is on screen.
    */
   private awake(time: number): boolean {
     if (this.pointer.inside) return true;
+    if (this.o.sustainIdle && this.o.idleAmp > 0) return true;
     if (this.ripples.length > 0) return true;
     if (this.scan || this.pulse > 0) return true;
     if (Math.abs(this.emphK - (this.emphOn ? 1 : 0)) > 0.015) return true;

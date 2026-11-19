@@ -43,6 +43,7 @@ export function mountHeroScene(
     fogNear: 16,
     fogFar: 35,
     alpha: false,
+    sustainIdle: true,
     lift: compact ? 0 : 0.95,
     liftRadius: 1.15,
     liftColor: "#6F8DFF",
