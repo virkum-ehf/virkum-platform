@@ -17,7 +17,7 @@ export function LocaleRedirect() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
-      <Logo height={44} className="animate-pulse motion-reduce:animate-none" />
+      <Logo height={35} className="animate-pulse motion-reduce:animate-none" />
     </div>
   );
 }

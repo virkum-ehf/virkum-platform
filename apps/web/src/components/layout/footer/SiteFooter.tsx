@@ -49,7 +49,7 @@ export async function SiteFooter() {
       <div className="wrap">
         <div className={styles.columns}>
           <div>
-            <Logo variant="onDark" height={38} className={styles.logo} decorative />
+            <Logo variant="onDark" height={30} className={styles.logo} decorative />
             <p>
               <strong className={styles.company} translate="no">
                 {t("companyName")}
